@@ -19,12 +19,10 @@
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
-                            <a href="{{ route('report.admin')}}">Data Pengaduan</a>
-                            
+                            <a href="{{ route('report.admin')}}">Data Pengaduan</a>                           
                           </li>
-                          <li class="breadcrumb-item">
-                            
-                            <a href="index.html">Ulasan Pengaduan</a>
+                          <li class="breadcrumb-item">                            
+                            <a href="{{ route('view-report.admin')}}">Ulasan Pengaduan</a>
                           </li>
                       </ol>
                   </nav>
@@ -50,32 +48,6 @@
         <div class="card">
           <div class="card-body">
 
-            <div class="mt-4 activity">
-              <div class="d-flex align-items-start border-left-line pb-3">
-                  <div>
-                      <a href="javascript:void(0)" class="btn btn-info btn-circle mb-2 btn-item">
-                          <i data-feather="shopping-cart"></i>
-                      </a>
-                  </div>
-              </div>
-              <div class="d-flex align-items-start border-left-line pb-3">
-                  <div>
-                      <a href="javascript:void(0)"
-                          class="btn btn-danger btn-circle mb-2 btn-item">
-                          <i data-feather="message-square"></i>
-                      </a>
-                  </div>
-
-              </div>
-              <div class="d-flex align-items-start border-left-line">
-                  <div>
-                      <a href="javascript:void(0)" class="btn btn-cyan btn-circle mb-2 btn-item">
-                          <i data-feather="bell"></i>
-                      </a>
-                  </div>
-
-              </div>
-          </div>
 
             {{-- <table border="0">
               <tbody>
@@ -113,7 +85,7 @@
               </tbody>
             </table>
                --}}
-
+            
             <div class="row">
               <div class="col-lg-3">
                 <p>Tanggal Pengaduan</p>
@@ -140,6 +112,17 @@
                 <p class="" style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quae iste? Earum amet eaque eos id exercitationem voluptas quasi at porro similique reprehenderit, deleniti optio quod tempore minima possimus vero. Quidem maxime incidunt rerum neque magni molestiae sapiente dignissimos possimus esse tempora inventore suscipit quibusdam dolor, reprehenderit a et corporis tenetur consectetur. Nemo ad incidunt eveniet ex neque ipsa non minus tenetur nisi, expedita veritatis iusto aliquid animi quas cum iure praesentium quaerat, voluptas eaque reprehenderit sit! Doloremque nulla consectetur obcaecati, ipsum laboriosam quasi vel modi magni enim similique, beatae, fugiat culpa. Laboriosam sit rerum tempora doloremque similique, dolor ab?</p>
               </div>
             </div>
+            
+          </div>
+          <div class="d-flex justify-content-center mb-3">
+            <div class="btn-list">
+              <a href="{{ route('report.admin') }}">
+                <div type="button" class="btn waves-effect waves-light btn-danger">Tolak</div>
+              </a>
+              <a href="{{ route('accept-report.admin') }}">
+                <div type="button" class="btn waves-effect waves-light btn-success">Terima</div>
+              </a>
+          </div>
           </div>
         </div>
       </div>

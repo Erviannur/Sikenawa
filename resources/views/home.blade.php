@@ -59,7 +59,7 @@
                         </div> <!-- header content right -->            
                     </div>
                     <div class="col-lg-7">
-                        <img src="{{ asset('assets/images/sapi/bg.jpeg') }}"  width="600px" alt="hero">
+                        <img src="{{ asset('assets/images/sapi/bg.jpeg') }}"  width="500px" alt="hero">
                     </div>
                 </div>
             </div> <!-- container -->
@@ -113,16 +113,15 @@
 
     <!--====== CALL TO ACTION PART START ======-->
 
-    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(assets/images/call-to-action.jpg)">
+    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url('{{ asset('assets/images/sapi/animals.jpg') }}') ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-9">
                     <div class="call-action-content text-center">
-                        <h2 class="action-title">Have any project on mind?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostrud.</p>
+                        <h2 class="action-title">Apakah anda memiliki keluhan?</h2>
+                        <p>Jika ada yang ingin anda tanyakan bisa klik tombol dibawah ini</p>
                         <ul>
-                            <li><a class="main-btn custom" href="#">download cv</a></li>
-                            <li><a class="main-btn custom-2" href="#">hire me</a></li>
+                            <li><a class="main-btn custom-2" href="{{ route('complaint.user') }}">Ke pengaduan</a></li>
                         </ul>
                     </div> <!-- call action content -->
                 </div>

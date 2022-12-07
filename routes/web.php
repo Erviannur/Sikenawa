@@ -40,6 +40,14 @@ Route::get('check-report', function () {
     return view('admin.report.view-report');
 })->name('view-report.admin');
 
+Route::get('accept-report', function () {
+    return view('admin.report.accept-report');
+})->name('accept-report.admin');
+
+Route::get('success-report', function () {
+    return view('admin.report.succesfully');
+})->name('success-report.admin');
+
 Route::get('confirm-officer', function () {
     return view('admin.confirm-officer.confirm-officer');
 })->name('confirm-officer.admin');

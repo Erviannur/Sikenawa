@@ -25,8 +25,27 @@
             <div class="auth-page">
                 <div class="card auth-card shadow-lg" style="height:400px;">
                     <div class="card-body">
-                        <div class="px-3">
-
+                        <div class="px-3 mt-3">
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                        <tr>
+                                            <td> <i class="fa fa-circle fa-solid fa-lg px-2 text-success" > </i> </td>
+                                            <td> <p class="text-dark"> <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime. </small> </p> </td>
+                                        </tr> 
+                                        <tr>
+                                            <td> <i class="fa fa-circle fa-solid fa-lg px-2 text-success" > </i> </td>
+                                            <td> <p class="text-dark"> <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime. </small> </p> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <i class="fa fa-circle fa-solid fa-lg px-2 text-success" > </i> </td>
+                                            <td> <p class="text-dark"> <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime. </small> </p> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <i class="fa fa-circle fa-solid fa-lg px-2 text-success" > </i> </td>
+                                            <td> <p class="text-dark"> <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime. </small> </p> </td>
+                                        </tr>
+                                </table>
+                            </div>                    
                         </div>
                     </div><!--end card-body-->
                 </div><!--end card-->

@@ -941,7 +941,7 @@ p {
     z-index: -1; }
 
 .call-action-content .action-title {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   color: #fff;
   padding-bottom: 30px; }
@@ -1778,7 +1778,7 @@ p.form-message.success, p.form-message.error {
   color: rgb(34, 221, 112);
 } */
 
-.border-left-line {
+/* .border-left-line {
   border-left: 1px solid #000000;
   position: relative;  
   height: 60px;
@@ -1793,4 +1793,5 @@ p.form-message.success, p.form-message.error {
 
 .border-left-line:last-child {
     border-left: 0; 
-}
+} */
+

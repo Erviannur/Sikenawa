@@ -7919,7 +7919,9 @@ sidebar navigation
   -moz-box-shadow: 0px 3px 9px 0px rgba(162, 176, 190, 0.15); }
 
 .sidebar-nav {
-  padding-top: 30px; }
+  padding-top: 30px;
+  
+}
   .sidebar-nav #sidebarnav {
     /*******************
          Small cap
