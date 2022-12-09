@@ -77,19 +77,22 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h3 class="text-center text-dark"> <b> Konfirmasi Petugas </b></h3>
-            <form class="form-inline" action="">
-              <div class="row">
-                <div class="col-lg-10">
-                  <div class="form-group mx-sm-3 mb-2">
-                    <input type="text" class="form-control" id="Location" placeholder="Pemeriksaan selesai">
-                  </div>
-                </div>
-                <div class="col-lg-2">              
-                  <button type="submit" class="btn btn-success mb-2" style="width: 80px;">Selesai</button>
-                </div>
-              </div>
-            </form>
+            <h3 class="text-center text-dark mb-5"> <b> Konfirmasi Petugas </b></h3>
+            
+            <div class="d-flex justify-content-center">
+              <form class="form-inline">
+                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Petugas Menuju Lokasi">
+                <button type="submit" class="btn btn-success mb-2">Jalan</button>
+              </form>
+            </div>
+
+            <div class=" d-flex justify-content-center form-css">
+              <form class="form-inline mb-5">
+                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Seleasi Pemeriksaan">
+                <button type="submit" class="btn btn-success mb-2">Selesai</button>
+              </form>
+            </div>
+
           </div>
         </div>
 

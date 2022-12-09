@@ -67,7 +67,7 @@
                 <textarea class="form-control" rows="2" placeholder="Ketikan koordinat titik lokasi"></textarea>
               </div>
               <p>Kategori Zona</p>
-              <div class="btn-list pb-3">
+              <div class="btn-list pb-3 d-flex justify-content-between">
                 <button type="button" class="btn waves-effect waves-light btn-danger" style="width: 93px">Merah</button>
                 <button type="button" class="btn waves-effect waves-light btn-warning" style="width: 93px">Kuning</button>
                 <button type="button" class="btn waves-effect waves-light btn-success" style="width: 93px">Hijau</button>

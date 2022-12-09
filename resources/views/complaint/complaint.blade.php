@@ -20,7 +20,7 @@
 
 <div class="background-image" style="background-image: url('{{ asset('assets/images/sapi/background.jpeg') }}">
     <div class="container-fluid">
-        <div class="row pt-150 pb-130" style="justify-content:center;">
+        <div class="row pt-200 pb-130" style="justify-content:center;">
             <div class="col-lg-5 align-self-center">
                 <div class="auth-page">
                     <div class="card auth-card shadow-lg">
