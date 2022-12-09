@@ -12,12 +12,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="page-scroll" href="{{ route('home.user')}}">Home</a></li>
-            <li class="nav-item"><a class="page-scroll" href="{{ route('complaint.user') }}">Pengaduan</a></li>
+            <li class="nav-item"><a class="page-scroll" href="{{ route('pengaduan.create') }}">Pengaduan</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('generateId.user')}}">Status</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('disease-map.user')}}">Peta Penyakit</a></li>
         </ul>
         <div class="m-lauto">
-            <a href="{{ route('signin')}}">
+            <a href="{{ route('login') }}">
                 <div class="btn btn-success btn-sm"> Masuk</div>
             </a>
             <div class="btn btn-primary btn-sm modalMd" data-toggle="modal" data-target="#modalMd">Pusat Bantuan</div>

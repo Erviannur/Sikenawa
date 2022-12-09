@@ -19,10 +19,10 @@
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
-                            <a href="{{ route('report.admin')}}">Data Pengaduan</a>                           
+                            <a href="{{ route('report.index')}}">Data Pengaduan</a>                           
                           </li>
                           <li class="breadcrumb-item">                            
-                            <a href="{{ route('view-report.admin')}}">Ulasan Pengaduan</a>
+                            <a href="{{ route('viewreport.index')}}">Ulasan Pengaduan</a>
                           </li>
                       </ol>
                   </nav>
@@ -103,20 +103,22 @@
                 <p>:</p>
                 <p>:</p>
               </div>
+              @foreach($pengaduan as $key => $pengaduan)
               <div class="col-lg-8">
-                <p>10 Desember 2022</p>
-                <p>Lorem, ipsum dolor sit amet </p>
-                <p>08766788931</p>
-                <p>example@gmail.com</p>
-                <p>Jalan Arteri Raya 17, RT 06 RW 07, Kelurahan Macanan, Kecamatan Bumiayu, Kota Surabaya</p>
-                <p class="" style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quae iste? Earum amet eaque eos id exercitationem voluptas quasi at porro similique reprehenderit, deleniti optio quod tempore minima possimus vero. Quidem maxime incidunt rerum neque magni molestiae sapiente dignissimos possimus esse tempora inventore suscipit quibusdam dolor, reprehenderit a et corporis tenetur consectetur. Nemo ad incidunt eveniet ex neque ipsa non minus tenetur nisi, expedita veritatis iusto aliquid animi quas cum iure praesentium quaerat, voluptas eaque reprehenderit sit! Doloremque nulla consectetur obcaecati, ipsum laboriosam quasi vel modi magni enim similique, beatae, fugiat culpa. Laboriosam sit rerum tempora doloremque similique, dolor ab?</p>
-              </div>
+                <p>{{$pengaduan->tanggal}}</p>
+                <p>{{$pengaduan->name}}</p>
+                <p>{{$pengaduan->nomer}}</p>
+                <p>{{$pengaduan->email}}</p>
+                <p>{{$pengaduan->idLokasi}}</p>
+                <p>{{$pengaduan->keterangan}}</p>
+                </div>
+              @endforeach
             </div>
             
           </div>
           <div class="d-flex justify-content-center mb-3">
             <div class="btn-list">
-              <a href="{{ route('report.admin') }}">
+              <a href="{{ route('report.index') }}">
                 <div type="button" class="btn waves-effect waves-light btn-danger">Tolak</div>
               </a>
               <a href="{{ route('accept-report.admin') }}">

@@ -55,18 +55,20 @@
                               </tr>
                           </thead>
                           <tbody>
+                            @foreach($pengaduan as $key => $pengaduan)
                               <tr>
-                                  <td>1</td>
-                                  <td>01 Desember 2022</td>
-                                  <td>Vian</td>
+                                  <td>{{$key+1}}</td>
+                                  <td>{{$pengaduan->tanggal}}</td>
+                                  <td>{{$pengaduan->name}}</td>
                                   <td>
-                                    <a href="{{ route('view-report.admin')}}">
+                                    <a href="{{ route('viewreport.index')}}">
                                       <button class="btn btn-sm btn-success btn-rounded" >
                                         <i class="fas fa-print"></i> Cek
                                       </button>
                                     </a>
                                   </td>
                               </tr>
+                              @endforeach
                           </tbody>
                       </table>
                   </div>
