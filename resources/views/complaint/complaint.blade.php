@@ -32,12 +32,12 @@
                                 </div> <!--end auth-logo-text-->  
     
                                 
-                                <form class="form-horizontal auth-form my-4" action="" method="POST">
+                                <form class="form-horizontal auth-form my-4" action="{{ route('pengaduan.store') }}" method="POST">
                                     @csrf
                                     <div class="form-group">
-                                        <label for="username">Nama</label>
+                                        <label for="name">Nama</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Nama" name="name" required>
+                                            <input type="text" class="form-control" id="name" placeholder="Masukan Nama" name="name" required>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
@@ -56,16 +56,27 @@
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="Alamat">Alamat</label>
+                                        <label for="tanggal">tanggal</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="Alamat" placeholder="Masukan Alamat" name="alamat" required>
+                                            <input type="date" class="form-control" id="tanggal" placeholder="Masukan tanggal" name="tanggal" required>
                                         </div>                                    
+                                    </div><!--end form-group--> 
+
+                                    <div class="form-group">
+                                        <label for="idLokasi">Alamat</label>
+                                        <select class="form-control @error('idLokasi') is-invalid @enderror" id="idLokasi"  name="idLokasi">
+                                            @foreach ($lokasi as $lokasi)
+                                                <option value="{{ $lokasi->idLokasi}}">{{$lokasi->nama_kecamatan}}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('idLokasi') <span class="text-danger">{{$message}}</span> @enderror                               
+                           
                                     </div><!--end form-group-->
 
                                     <div class="form-group">
                                         <label for="keterangan">Keterangan</label>
                                         <div class="input-group mb-3">
-                                            <textarea type="text" class="form-control" id="keterangan" placeholder="isi aduan" name="keterangan" required rows="5"> </textarea>
+                                            <textarea type="text" class="form-control" id="keterangan" placeholder="isi aduan" name="keterangan"  rows="5"> </textarea>
                                         </div>                                    
                                     </div><!--end form-group--> 
 

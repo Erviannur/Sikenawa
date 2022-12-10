@@ -20,7 +20,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link" href="{{ route('report.admin')}}" aria-expanded="false">
+                  <a class="sidebar-link" href="{{ route('report.index')}}" aria-expanded="false">
                     <i class="fa fa-book"></i>
                     <span class="hide-menu">Daftar Pengaduan</span>
                   </a>
@@ -52,7 +52,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link" href="{{ route('home.user')}}" aria-expanded="false">
+                  <a class="sidebar-link" href="{{ route('logout')}}" aria-expanded="false">
                     <i class="fas fa-sign-out-alt"></i>
                     <span class="hide-menu">Log out</span>
                   </a>
