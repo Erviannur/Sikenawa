@@ -35,7 +35,7 @@
                                 </div> <!--end auth-logo-text-->  
 
                                 
-                                <form class="form-horizontal auth-form my-4" action="" method="get">
+                                <form class="form-horizontal auth-form my-4" action="{{ route('login') }}" method="POST">
                                     @csrf
                                     <div class="form-group">
                                         <label for="email">Email</label>
@@ -43,7 +43,13 @@
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-user"></i> 
                                             </span>                                                                                                              
-                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                            @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </div>                                    
                                     </div><!--end form-group--> 
 
@@ -53,15 +59,24 @@
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-lock"></i> 
                                             </span>                                                       
-                                            <input type="password" class="form-control" id="userpassword" placeholder="Enter password" name="password">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                            @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </div>                               
                                     </div><!--end form-group--> 
 
                                     <div class="form-group row mt-4">
                                         <div class="col-sm-6">
                                             <div class="custom-control custom-switch switch-success">
-                                                <input type="checkbox" class="custom-control-input" id="customSwitchSuccess">
-                                                <label class="custom-control-label text-muted" for="customSwitchSuccess">Remember me</label>
+                                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                                <label class="form-check-label" for="remember">
+                                                    {{ __('Remember Me') }}
+                                                </label>
                                             </div>
                                         </div><!--end col--> 
                                     </div><!--end form-group--> 

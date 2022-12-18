@@ -94,7 +94,7 @@
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Address</h6>
-                            <p>123 Stree New York City , United States Of America 750</p>
+                            <p>Jalan R. A. Kartini No. 56, Kepatihan, Kecamatan Banyuwangi, Kepatihan, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68411</p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
@@ -105,8 +105,8 @@
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Phone</h6>
-                            <p>+931 2222 5555</p>
-                            <p>+547 5554 6663</p>
+                            <p>+16 82141368195</p>
+                            <p>082141368195</p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
@@ -122,8 +122,9 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-9">
                     <div class="call-action-content text-center">
-                        <h2 class="action-title">Apakah anda memiliki keluhan?</h2>
-                        <p>Jika ada yang ingin anda tanyakan bisa klik tombol dibawah ini</p>
+                        <h2 class="action-title">Apakah anda memiliki keluhan ?</h2>
+                        <p style="text-align: justify">Sekarang para peternak tidak perlu khawatir pengaduan yang mereka ajukan mengalami keterlambatan penanganan. SIKENAWA akan membantu para peternak mendapatkan informasi mengenali layanan vaksinasi hewan ternak, penanganan penyakit hewan ternak, pengaduan, dan menyediakan berbagai informasi yang memudahkan para peternak dalam merawat hewan ternak demi meningkatkan kualitas hasil produk peternakan di Kabupaten Banyuwangi.</p>
+                        <p>Jika anda memiliki keluhan, silahkan klik tombol pengaduan di bawah ini!</p>
                         <ul>
                             <li><a class="main-btn-two custom-2" href="{{ route('complaint.user') }}">Ke pengaduan</a></li>
                         </ul>
@@ -140,13 +141,14 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
+                    <h2 class="title text-center">Peta Penyebaran Penyakit</h2>
+                    <h2 class="title text-center">Hewan Ternak</h2>
                     <div class="section-title text-center pb-25">
-                        <h2 class="title">Get In Touch</h2>
-                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                        <h3 class="sub-title">Kabupaten Banyuwangi</h3>
                     </div> <!-- section title -->
                 </div>
             </div> 
-            <div class="row pt-50 pb-150">
+            <div class="row pt-10 pb-80">
                 <div class="col-lg-8">
                     <div class="contact-map mt-20">
                         <div class="gmap_canvas">                            

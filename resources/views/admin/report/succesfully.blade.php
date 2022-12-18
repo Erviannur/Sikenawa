@@ -55,11 +55,6 @@
             </div>
             <p class="text-center mt-4">Terimakasih Balasan sudah terkirim,peternak akan segera  diberi tahu</p>
           </div>
-            <div class="btn-list mb-3 px-5">
-              <a href="{{ route('report.admin') }}">
-                <div type="button" class="btn waves-effect waves-light btn-primary">Ke halaman awal</div>
-              </a>
-          </div>
         </div>
       </div>
     </div>

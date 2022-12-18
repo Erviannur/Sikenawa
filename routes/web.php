@@ -1,6 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\PengaduanController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ViewreportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +27,9 @@ Route::get('register', function () {
     return view('auth.register');
 })->name('register');
 
+Auth::routes();
+Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout']);
+
 
 // Admin
 Route::get('dashboard', function () {
@@ -32,13 +40,9 @@ Route::get('notifications', function () {
     return view('admin.notifications.notifications');
 })->name('notifications.admin');
 
-Route::get('report', function () {
-    return view('admin.report.report');
-})->name('report.admin');
 
-Route::get('check-report', function () {
-    return view('admin.report.view-report');
-})->name('view-report.admin');
+Route::resource('report', ReportController::class);
+Route::resource('viewreport', ViewreportController::class);
 
 Route::get('accept-report', function () {
     return view('admin.report.accept-report');
@@ -74,6 +78,8 @@ Route::get('complaint', function () {
     return view('complaint.complaint');
 })->name('complaint.user');
 
+Route::resource('pengaduan', PengaduanController::class);
+
 
 Route::get('generate-id', function () {
     return view('status.generateId');
@@ -86,5 +92,7 @@ Route::get('status', function () {
 Route::get('disease-map', function () {
     return view('disease-map.disease-map');
 })->name('disease-map.user');
+
+
 
 

@@ -35,24 +35,37 @@
                                 </div> <!--end auth-logo-text-->  
 
                                 
-                                <form class="form-horizontal auth-form my-4" action="">
+                                <form class="form-horizontal auth-form my-4" action="{{ route('register') }}" method="POST">
+                                    @csrf
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <div class="input-group mb-3">
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-user"></i> 
                                             </span>                                                                                                              
-                                            <input type="email" class="form-control" id="username" placeholder="Enter username">
+                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                                @error('email')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="userpassword">Kata Sandi</label>                                            
+                                        <label for="password">Kata Sandi</label>                                            
                                         <div class="input-group mb-3"> 
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-lock"></i> 
                                             </span>                                                       
-                                            <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                                @error('password')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
                                         </div>                               
                                     </div><!--end form-group-->
 
@@ -62,7 +75,7 @@
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-lock"></i> 
                                             </span>                                                       
-                                            <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                         </div>                               
                                     </div><!--end form-group--> 
 
@@ -71,7 +84,7 @@
                                             <button class="btn btn-success btn-round btn-block waves-effect waves-light" type="submit">Daftar <i class="fas fa-sign-in-alt ml-1"></i></button>
                                         </div><!--end col--> 
                                     </div> <!--end form-group-->                           
-                                    <p class="text-center mt-4"> <small> Sudah Punya Akun? <a href="{{ route('signin')}}" class="text-success">Masuk</a> </small> </p>
+                                    <p class="text-center mt-4"> <small> Sudah Punya Akun? <a href="{{ route('login')}}" class="text-success">Masuk</a> </small> </p>
                                 </form><!--end form-->
 
                             </div><!--end /div-->
@@ -81,7 +94,7 @@
             </div><!--end col-->           
         </div><!--end row-->
     </div>
-    <!-- End Log In page -->)
+    <!-- End Log In page -->
 </div>
 
 @endsection
