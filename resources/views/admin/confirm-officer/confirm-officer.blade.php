@@ -77,22 +77,32 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h3 class="text-center text-dark"> <b> Konfirmasi Petugas </b></h3>
-            <form class="form-inline" action="">
-              <div class="row">
-                <div class="col-lg-10">
-                  <div class="form-group mx-sm-3 mb-2">
-                    <input type="text" class="form-control" id="Location" placeholder="Pemeriksaan selesai">
-                  </div>
-                </div>
-                <div class="col-lg-2">              
-                  <button type="submit" class="btn btn-success mb-2" style="width: 80px;">Selesai</button>
-                </div>
+
+            <div class="row">
+              <div class="col-lg-10">
+                <h5 class="text-dark"><i class="fas fa-solid fa-2x fa-motorcycle p-3"></i>Berangkat Menuju Lokasi</h5>
               </div>
-            </form>
+              <div class="col-lg-2">
+                <button class="btn btn-success btn-block" type="submit"> Jalan </button>
+              </div>
+            </div>
+
           </div>
         </div>
 
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-10">
+                <h5 class="text-dark"><i class="fas fa-solid fa-2x fa-stethoscope p-3"></i> Pemeriksaan selesai</h5>
+              </div>
+              <div class="col-lg-2">
+                <button class="btn btn-success btn-block" type="submit"> Selesai </button>
+              </div>
+          </div>
+        </div>
+
+        </div>
       </div>
     </div>
 

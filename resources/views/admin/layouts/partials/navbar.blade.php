@@ -15,7 +15,7 @@
                 <!-- Logo icon -->
                 <a href="">
                     <b class="logo-icon">
-                        <img src="{{ asset('assets/images/logo/logo.jpeg') }}" width="50px" alt="homepage" class="dark-logo" />
+                        <img src="{{ asset('assets/images/logo/logo.png') }}" width="50px" alt="sikenawa" class="dark-logo" />
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/logo/logo.jpeg') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/logo/logo.png') }}">
     <!--====== Title ======-->
     <title>Sikenawa</title>
     <!--====== Favicon Icon ======-->
@@ -57,15 +57,10 @@
     @yield('content')
 
       
-<!--====== BACK TOP TOP PART START ======-->
-
-<a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-<!--====== BACK TOP TOP PART ENDS ======-->
-
-<!-- Modal -->
-<div class="modal fade" id="modalMd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalMd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Pusat Bantuan</h5>
@@ -80,6 +75,9 @@
       </div>
     </div>
   </div>
+  
+  <a href="#" class="call-center"><i class="lni-chevron-up"></i></a>        
+  
 
 <!--====== jquery js ======-->
 <script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>

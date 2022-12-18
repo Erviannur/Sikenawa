@@ -21,7 +21,7 @@
 </header>
 
 
-<div class="background-image-auth" style="background-image: url('{{ asset('assets/images/sapi/background.jpeg') }}">
+<div class="background-image-auth">
     <div class="container-fluid">
         <div class="row pt-50" style="justify-content:center;">
             <div class="col-lg-4 align-self-center">

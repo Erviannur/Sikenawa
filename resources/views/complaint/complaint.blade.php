@@ -18,7 +18,7 @@
 </header>
         
 
-<div class="background-image" style="background-image: url('{{ asset('assets/images/sapi/background.jpeg') }}">
+<div class="background-image">
     <div class="container-fluid">
         <div class="row pt-150 pb-130" style="justify-content:center;">
             <div class="col-lg-5 align-self-center">
@@ -71,7 +71,7 @@
 
                                     <div class="form-group mb-0 row">
                                         <div class="col-12 mt-2">
-                                            <button class="btn btn-success btn-round btn-block waves-effect waves-light" type="submit">Masuk <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                            <button class="btn btn-success btn-round btn-block waves-effect waves-light" type="submit">Kirim <i class="fas fa-sign-in-alt ml-1"></i></button>
                                         </div><!--end col--> 
                                     </div> <!--end form-group-->                           
                                 </form><!--end form-->

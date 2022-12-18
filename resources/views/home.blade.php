@@ -31,7 +31,7 @@
                 <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
             </div> <!-- header shape -->
             <div class="header-shape shape-five layer" data-depth="0.20">
-                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
+                <img src="assets/images/banner/shape/shape-5.png" alt="Shape">
             </div> <!-- header shape -->
             <div class="header-shape shape-six layer" data-depth="0.15">
                 <img src="assets/images/banner/shape/shape-4.png" alt="Shape">
@@ -49,19 +49,23 @@
                 <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
             </div> <!-- header shape -->
 
+            
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
                         <div class="header-content-right">
-                            <h1 class="title"><u>SIKENAWA</u></h1>
-                            <h3 class="text-dark mb-5"><b>Sistem informasi Kesehatan Ternak Banyuwangi</b></h3>
+                            <h1 class="sub-title text-success"> <u> SIKENAWA </u></h1>
+                            <h3 class="text-dark" >Sistem informasi Kesehatan Ternak Banyuwangi</h3>
                             <p class="text-dark" style="text-align: justify">SIKENAWA merupakan platform dua arah yang menghubungkan antara divisi dinas peternakan Kabupaten Banyuwangi dengan peternak yang ada diseluruh Kabupaten Banyuwangi. Memuat informasi meengenai pengaduan dan peta penyebaran penyakit ternak yang ada di Kabupaten.</p>
-                        </div> <!-- header content right -->            
+                            <a class="main-btn" href="{{ route('signin')}}">Masuk</a>
+                        </div> <!-- header content right -->
                     </div>
-                    <div class="col-lg-7">
-                        <img src="{{ asset('assets/images/sapi/bg.jpeg') }}"  width="500px" alt="hero">
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="header-image d-none d-lg-block">
+                            <img class="" style="" src="{{ asset('assets/images/sapi/foto-banner.jpg') }}" alt="hero">
+                        </div> <!-- header image -->
                     </div>
-                </div>
+                </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- header content -->
     </header>
@@ -84,7 +88,7 @@
             </div> <!-- row -->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
+                    <div class="contact-box text-center mt-30" style="height: 80%;">
                         <div class="contact-icon">
                             <i class="lni-map-marker"></i>
                         </div>
@@ -95,7 +99,7 @@
                     </div> <!-- contact box -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
+                    <div class="contact-box text-center mt-30" style="height: 80%;">
                         <div class="contact-icon">
                             <i class="lni-phone"></i>
                         </div>
@@ -121,7 +125,7 @@
                         <h2 class="action-title">Apakah anda memiliki keluhan?</h2>
                         <p>Jika ada yang ingin anda tanyakan bisa klik tombol dibawah ini</p>
                         <ul>
-                            <li><a class="main-btn custom-2" href="{{ route('complaint.user') }}">Ke pengaduan</a></li>
+                            <li><a class="main-btn-two custom-2" href="{{ route('complaint.user') }}">Ke pengaduan</a></li>
                         </ul>
                     </div> <!-- call action content -->
                 </div>
@@ -175,8 +179,7 @@
 
 
     <!-- Modal -->
-
+    <a href="#" class="call-center"><i class="lni-chevron-up"></i>Pusat Bantuan</a>    
 
     @include('layouts.partials.footer')
-
     @endsection

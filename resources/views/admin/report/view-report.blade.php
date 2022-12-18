@@ -116,7 +116,7 @@
           </div>
           <div class="d-flex justify-content-center mb-3">
             <div class="btn-list">
-              <a href="{{ route('report.admin') }}">
+              <a href="{{ route('failed-report.admin') }}">
                 <div type="button" class="btn waves-effect waves-light btn-danger">Tolak</div>
               </a>
               <a href="{{ route('accept-report.admin') }}">

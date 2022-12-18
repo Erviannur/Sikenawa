@@ -125,7 +125,7 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #754ef9;
+  border: 1px solid #0eb24d;
   padding: 0 40px;
   font-size: 15px;
   line-height: 48px;
@@ -138,15 +138,15 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(118, 78, 249, 0.55);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(118, 78, 249, 0.55);
-  box-shadow: 0px 5px 8px 0px rgba(118, 78, 249, 0.55);
-  background-color: #754ef9;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(22, 177, 58, 0.55);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(22, 177, 58, 0.55);
+  box-shadow: 0px 5px 8px 0px rgba(22, 177, 58, 0.55);
+  background-color: #0eb24d;
   text-transform: uppercase; }
   .main-btn:hover {
     background-color: #fff;
-    color: #754ef9;
-    border-color: #754ef9; }
+    color: #0eb24d;
+    border-color: #0eb24d; }
   .main-btn.main-btn-2 {
     background-color: transparent;
     color: #fff;
@@ -155,9 +155,44 @@ p {
     -moz-box-shadow: none;
     box-shadow: none; }
     .main-btn.main-btn-2:hover {
-      background-color: #754ef9;
+      background-color: #0eb24d;
       color: #fff;
-      border-color: #754ef9; }
+      border-color: #0eb24d; }
+
+.main-btn-two {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #9600ff;
+  padding: 0 40px;
+  font-size: 15px;
+  line-height: 48px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(181, 0, 222, 0.55);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(181, 0, 222, 0.55);
+  box-shadow: 0px 5px 8px 0px rgba(149, 22, 177, 0.55);
+  /* background-color: #0eb24d; */
+  text-transform: uppercase; }
+  .main-btn-two:hover {
+    background-color: #fff;
+    color: #9600ff;
+    border-color: #9600ff; 
+  }
+
 
 /*===== All Section Title Style =====*/
 .section-title .title {
@@ -710,15 +745,15 @@ p {
     padding-bottom: 40px; }
 
 .header-image {
-  max-width: 430px;
+  max-width: 400px;
   margin: 0 auto;
+  
   position: relative; }
   .header-image::before {
     position: absolute;
     content: '';
     width: 100%;
     height: 82%;
-    border: 20px solid #754ef9;
     border-bottom: 0;
     top: 50%;
     left: 0;
@@ -732,13 +767,14 @@ p {
     content: '';
     width: 100%;
     height: 20px;
-    background-color: #754ef9;
     left: 0;
     bottom: 58px;
     z-index: 11; }
   .header-image img {
     position: relative;
-    z-index: 5; }
+    z-index: 5; 
+    border-radius: 5px;
+  }
 
 .header-social {
   position: absolute;
@@ -867,6 +903,8 @@ p {
       -o-transition: all 2s ease-out 0s;
       transition: all 2s ease-out 0s;
       width: 0; }
+
+      
 
 /*===========================
         4.SERVICES css 
@@ -1383,9 +1421,9 @@ p.form-message.success, p.form-message.error {
   .footer-copyright .copyright-text p {
     color: #fff; }
 
-.back-to-top {
+.help-center {
   font-size: 20px;
-  color: #fff;
+  color: rgb(15, 15, 15);
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -1402,11 +1440,13 @@ p.form-message.success, p.form-message.error {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  display: none; }
-  .back-to-top:hover {
-    color: #fff;
-    background-color: #754ef9;
-    border-color: #754ef9; }
+  display: none; 
+}
+.help-center:hover {
+  color: rgb(0, 0, 0);
+  background-color: #754ef9;
+  border-color: #754ef9; 
+}
 
 /*===========================
       10.PAGE BANNER css 
@@ -1467,6 +1507,8 @@ p.form-message.success, p.form-message.error {
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
         transform: translateY(-50%); }
+
+
 
 /*===========================
    10.SINGLE BLOG PAGE css 
@@ -1774,6 +1816,49 @@ p.form-message.success, p.form-message.error {
   height: 90vh;
 }
 
+
+ol.tick-mark {
+  position: relative;
+  z-index: 111;
+}
+
+ol.tick-mark > li {
+  list-style: none;
+  padding: 0;
+  padding-left: 35px;
+  margin-bottom: 1.5rem;
+}
+
+ol.tick-mark > li .bubble {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00b412;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+  text-align: center;
+  z-index: 111;
+}
+
+ol.tick-mark > li .bubble > * {
+  color: #fff;
+}
+
+ol.tick-mark:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 2px;
+  background: #00b412;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  z-index: 1;
+}
+
+
 /* .icon-rounded {
   color: rgb(34, 221, 112);
 } */
@@ -1795,3 +1880,30 @@ p.form-message.success, p.form-message.error {
     border-left: 0; 
 } */
 
+.call-center {
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 50%;
+  border: 2px solid #586376;
+  background-color: #152136;
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: none; 
+}
+
+.call-center:hover {
+  color: #fff;
+  background-color: #754ef9;
+  border-color: #754ef9; 
+}

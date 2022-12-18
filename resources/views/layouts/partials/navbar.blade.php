@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand text-dark" href="">
-        <img src="{{ asset('assets/images/logo/logo.jpeg')}}" width="50px"  alt="Logo"> <b> SIKENAWA </b>
+        <img src="{{ asset('assets/images/logo/logo.png')}}" width="50px"  alt="Logo"> <b> SIKENAWA </b>
     </a> <!-- Logo -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="toggler-icon"></span>
@@ -20,7 +20,7 @@
             <a href="{{ route('signin')}}">
                 <div class="btn btn-success btn-sm"> Masuk</div>
             </a>
-            <div class="btn btn-primary btn-sm modalMd" data-toggle="modal" data-target="#modalMd">Pusat Bantuan</div>
+            {{-- <div class="btn btn-primary btn-sm modalMd" data-toggle="modal" data-target="#modalMd">Pusat Bantuan</div> --}}
             
         </div>
     </div> <!-- navbar collapse -->

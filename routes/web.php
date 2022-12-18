@@ -48,6 +48,10 @@ Route::get('success-report', function () {
     return view('admin.report.succesfully');
 })->name('success-report.admin');
 
+Route::get('failed-report', function () {
+    return view('admin.report.block-report');
+})->name('failed-report.admin');
+
 Route::get('confirm-officer', function () {
     return view('admin.confirm-officer.confirm-officer');
 })->name('confirm-officer.admin');
