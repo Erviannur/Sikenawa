@@ -46,7 +46,7 @@
                 <li class="list-divider"></li>
                 <li class="nav-small-cap"><span class="hide-menu">Authentication</span></li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link" href="ticket-list.html" aria-expanded="false">
+                  <a class="sidebar-link" href="{{ route('user.admin')}}" aria-expanded="false">
                     <i class="fas fa-user"></i>
                     <span class="hide-menu">Akun Pengguna</span>
                   </a>

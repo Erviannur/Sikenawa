@@ -68,6 +68,11 @@ Route::get('maps', function () {
     return view('admin.map.map');
 })->name('maps.admin');
 
+Route::get('users', function () {
+    return view('admin.user.user');
+})->name('user.admin');
+
+
 
 // User
 Route::get('/', function () {
