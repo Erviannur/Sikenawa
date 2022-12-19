@@ -82,7 +82,7 @@
 
                                     <div class="form-group mb-0 row">
                                         <div class="col-12 mt-2">
-                                            <button class="btn btn-success btn-round btn-block waves-effect waves-light" type="submit">Kirim <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                            <button class="btn btn-success btn-round btn-block waves-effect waves-light" data-toggle="modal" data-target="#modalMd1">Kirim <i class="fas fa-sign-in-alt ml-1"></i></button>
                                         </div><!--end col--> 
                                     </div> <!--end form-group-->                           
                                 </form><!--end form-->
@@ -98,6 +98,27 @@
 </div>
 
 @include('layouts.partials.footer')
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalMd1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">ID</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-center">Nomor ID</h4>
+            <p class="text-center mt-3">Berikut  adalah ID anda untuk memeriksa Status pengiriman laporan pengaduan
+                (Harap Screenshot/Tangkap Layar,untuk mengingat ID.)</p>
+            <h3 class="text-center px-2">A01</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
 @endsection
     

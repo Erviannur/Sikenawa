@@ -19,13 +19,13 @@
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
-                            <a href="{{ route('report.admin')}}">Data Pengaduan</a>
+                            <a href="">Data Pengaduan</a>
                           </li>
                           <li class="breadcrumb-item">
-                            <a href="{{ route('view-report.admin')}}">Ulasan Pengaduan</a>
+                            <a href="">Ulasan Pengaduan</a>
                           </li>
                           <li class="breadcrumb-item">
-                            <a href="{{ route('accept-report.admin')}}">Balasan Pengaduan</a>
+                            <a href="">Balasan Pengaduan</a>
                           </li>
                       </ol>
                   </nav>
@@ -54,11 +54,6 @@
                 <i class="fas fa-check-circle text-danger fa-10x"></i>
             </div>
             <p class="text-center mt-4">Terimakasih Balasan sudah terkirim,peternak akan segera  diberi tahu</p>
-          </div>
-            <div class="btn-list mb-3 px-5">
-              <a href="{{ route('report.admin') }}">
-                <div type="button" class="btn waves-effect waves-light btn-primary">Ke halaman awal</div>
-              </a>
           </div>
         </div>
       </div>
