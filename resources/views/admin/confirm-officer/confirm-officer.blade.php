@@ -77,25 +77,32 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h3 class="text-center text-dark mb-5"> <b> Konfirmasi Petugas </b></h3>
-            
-            <div class="d-flex justify-content-center">
-              <form class="form-inline">
-                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Petugas Menuju Lokasi">
-                <button type="submit" class="btn btn-success mb-2">Jalan</button>
-              </form>
-            </div>
 
-            <div class=" d-flex justify-content-center form-css">
-              <form class="form-inline mb-5">
-                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Seleasi Pemeriksaan">
-                <button type="submit" class="btn btn-success mb-2">Selesai</button>
-              </form>
+            <div class="row">
+              <div class="col-lg-10">
+                <h5 class="text-dark"><i class="fas fa-solid fa-2x fa-motorcycle p-3"></i>Berangkat Menuju Lokasi</h5>
+              </div>
+              <div class="col-lg-2">
+                <button class="btn btn-success btn-block" type="submit"> Jalan </button>
+              </div>
             </div>
 
           </div>
         </div>
 
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-10">
+                <h5 class="text-dark"><i class="fas fa-solid fa-2x fa-stethoscope p-3"></i> Pemeriksaan selesai</h5>
+              </div>
+              <div class="col-lg-2">
+                <button class="btn btn-success btn-block" type="submit"> Selesai </button>
+              </div>
+          </div>
+        </div>
+
+        </div>
       </div>
     </div>
 

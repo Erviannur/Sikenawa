@@ -52,6 +52,10 @@ Route::get('success-report', function () {
     return view('admin.report.succesfully');
 })->name('success-report.admin');
 
+Route::get('failed-report', function () {
+    return view('admin.report.block-report');
+})->name('failed-report.admin');
+
 Route::get('confirm-officer', function () {
     return view('admin.confirm-officer.confirm-officer');
 })->name('confirm-officer.admin');
@@ -63,6 +67,11 @@ Route::get('map-data', function () {
 Route::get('maps', function () {
     return view('admin.map.map');
 })->name('maps.admin');
+
+Route::get('users', function () {
+    return view('admin.user.user');
+})->name('user.admin');
+
 
 
 // User

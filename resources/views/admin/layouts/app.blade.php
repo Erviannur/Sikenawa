@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/logo/logo.jpeg') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/logo/logo.png') }}">
     <title>Sikenawa</title>
     <!-- Custom CSS -->
     <link href="{{ asset('administrator/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
@@ -20,7 +20,7 @@
     <!-- Custom CSS -->
     <link href="{{ asset('administrator/dist/css/style.min.css') }}" rel="stylesheet">
 
-<![endif]-->
+
 </head>
 
 <body>

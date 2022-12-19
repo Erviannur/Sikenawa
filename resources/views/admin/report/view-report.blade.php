@@ -19,10 +19,10 @@
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
-                            <a href="{{ route('report.index')}}">Data Pengaduan</a>                           
+                            <a href="">Data Pengaduan</a>                           
                           </li>
                           <li class="breadcrumb-item">                            
-                            <a href="{{ route('viewreport.index')}}">Ulasan Pengaduan</a>
+                            <a href="">Ulasan Pengaduan</a>
                           </li>
                       </ol>
                   </nav>
@@ -85,6 +85,7 @@
               </table>
           </div>       
             
+<<<<<<< HEAD
             {{-- <div class="row">
               <div class="col-lg-3">
                 <p>Tanggal Pengaduan</p>
@@ -115,9 +116,11 @@
             </div>
             --}}
           </div>
+=======
+>>>>>>> 3412f05c30b190a5679a18eb613a7fa30625db9f
           <div class="d-flex justify-content-center mb-3">
             <div class="btn-list">
-              <a href="{{ route('report.index') }}">
+              <a href="{{ route('failed-report.admin') }}">
                 <div type="button" class="btn waves-effect waves-light btn-danger">Tolak</div>
               </a>
               <a href="{{ route('accept-report.admin') }}">

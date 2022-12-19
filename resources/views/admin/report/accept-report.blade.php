@@ -19,13 +19,13 @@
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
-                            <a href="{{ route('report.admin')}}">Data Pengaduan</a>
+                            <a href="">Data Pengaduan</a>
                           </li>
                           <li class="breadcrumb-item">
-                            <a href="{{ route('view-report.admin')}}">Ulasan Pengaduan</a>
+                            <a href="">Ulasan Pengaduan</a>
                           </li>
                           <li class="breadcrumb-item">
-                            <a href="{{ route('accept-report.admin')}}">Balasan Pengaduan</a>
+                            <a href="">Balasan Pengaduan</a>
                           </li>
                       </ol>
                   </nav>

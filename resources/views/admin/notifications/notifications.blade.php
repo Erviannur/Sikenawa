@@ -44,30 +44,77 @@
       <div class="col-lg-12">
           <div class="card">
               <div class="card-body">
-                  <div class="alert alert-primary text-dark" role="alert">
-                      <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
-                      <small class="text-success " style="margin-left: 15px">21 November 2022</small>
+
+                  <div class="alert alert-success text-dark" role="alert">
+                    <div class="row mt-1">
+                        <div class="col-lg-4">
+                            <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5> <strong> 5 Laporan </strong> </h5>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5 class="text-right" style="color: #22ab13 ;">21 November 2022</h5>
+                        </div>
+                    </div>
                   </div>
-                  <div class="alert alert-primary text-dark" role="alert">
-                      <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
-                      <small class="text-success " style="margin-left: 15px">21 November 2022</small>
+                  
+                  <div class="alert alert-success text-dark" role="alert">
+                    <div class="row mt-1">
+                        <div class="col-lg-4">
+                            <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5> <strong> 5 Laporan </strong> </h5>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5 class="text-right" style="color: #22ab13 ;">21 November 2022</h5>
+                        </div>
+                    </div>
                   </div>
-                  <div class="alert alert-primary text-dark" role="alert">
-                      <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
-                      <small class="text-success " style="margin-left: 15px">21 November 2022</small>
+
+                  <div class="alert alert-success text-dark" role="alert">
+                    <div class="row mt-1">
+                        <div class="col-lg-4">
+                            <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5> <strong> 5 Laporan </strong> </h5>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5 class="text-right" style="color: #22ab13 ;">21 November 2022</h5>
+                        </div>
+                    </div>
                   </div>
-                  <div class="alert alert-primary text-dark" role="alert">
-                      <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
-                      <small class="text-success " style="margin-left: 15px">21 November 2022</small>
+
+                  <div class="alert alert-success text-dark" role="alert">
+                    <div class="row mt-1">
+                        <div class="col-lg-4">
+                            <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5> <strong> 5 Laporan </strong> </h5>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <h5 class="text-right" style="color: #22ab13 ;">21 November 2022</h5>
+                        </div>
+                    </div>
                   </div>
-                  <div class="alert alert-primary text-dark" role="alert">
-                      <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
-                      <small class="text-success " style="margin-left: 15px">21 November 2022</small>
-                  </div>
-                  <div class="alert alert-primary text-dark" role="alert">
-                      <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
-                      <small class="text-success " style="margin-left: 15px">21 November 2022</small>
-                  </div>
+
+                    <div class="alert alert-success text-dark" role="alert">
+                        <div class="row mt-1">
+                            <div class="col-lg-4">
+                                <strong><i class="fas fa-bell px-3"></i></strong> <b> Laporan Pengaduan </b> <br>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center">
+                                <h5> <strong> 5 Laporan </strong> </h5>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center">
+                                <h5 class="text-right" style="color: #22ab13 ;">21 November 2022</h5>
+                            </div>
+                        </div>
+                    </div>
+
               </div> <!-- end card-body-->
           </div> <!-- end card-->
       </div> <!-- end col-->

@@ -27,7 +27,7 @@
           </div>
           <div class="col-5 align-self-center">
             <div class="customize-input float-right">
-              <button class="btn btn-success btn-sm btn-rounded">Tambah Akun</button>
+              <button class="btn btn-success btn-sm">Tambah Akun</button>
             </div>
         </div>
       </div>
@@ -55,7 +55,6 @@
                               <tr>
                                   <th>No</th>
                                   <th>Username</th>
-                                  <th>No. Hp</th>
                                   <th>Password</th>
                                   <th>Opsi</th>
                               </tr>
@@ -64,7 +63,6 @@
                               <tr>
                                   <td>1</td>
                                   <td>Vian</td>
-                                  <td>081230467878</td>
                                   <td>92353bb0685dd9c566a17f822b21ded5</td>
                                   <td>
                                     <a href="">
