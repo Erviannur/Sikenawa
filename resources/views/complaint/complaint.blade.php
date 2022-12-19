@@ -63,13 +63,50 @@
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="idLokasi">Alamat</label>
-                                        <select class="form-control @error('idLokasi') is-invalid @enderror" id="idLokasi"  name="idLokasi">
-                                            @foreach ($lokasi as $lokasi)
-                                                <option value="{{ $lokasi->idLokasi}}">{{$lokasi->nama_kecamatan}}</option>
+                                        <label for="provinsi">Provinsi</label>
+                                        <select class="form-control @error('provinsi') is-invalid @enderror" id="provinsi"  name="provinsi" required>
+                                            <option >Pilih provinsi ..</option>                                            
+                                            @foreach ($provinces as $provinsi)
+                                                <option value="{{ $provinsi->name}}">{{$provinsi->name}}</option>
                                             @endforeach
                                         </select>
-                                        @error('idLokasi') <span class="text-danger">{{$message}}</span> @enderror                               
+                                        @error('provinsi') <span class="text-danger">{{$message}}</span> @enderror                               
+                           
+                                    </div><!--end form-group-->
+
+                                    <div class="form-group">
+                                        <label for="kabupaten">Kabupaten</label>
+                                        <select class="form-control @error('kabupaten') is-invalid @enderror" id="kabupaten"  name="kabupaten" required>
+                                            <option >Pilih kabupaten ..</option>
+                                            @foreach ($regencies as $kabupaten)
+                                                <option value="{{ $kabupaten->name}}">{{$kabupaten->name}}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('kabupaten') <span class="text-danger">{{$message}}</span> @enderror                               
+                           
+                                    </div><!--end form-group-->
+
+                                    <div class="form-group">
+                                        <label for="kecamatan">Kecamatan</label>
+                                        <select class="form-control @error('kecamatan') is-invalid @enderror" id="kecamatan"  name="kecamatan" required>
+                                            <option >Pilih kecematan ..</option>
+                                            @foreach ($districts as $kecamatan)
+                                                <option value="{{ $kecamatan->name}}">{{$kecamatan->name}}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('kecamatan') <span class="text-danger">{{$message}}</span> @enderror                               
+                           
+                                    </div><!--end form-group-->
+
+                                    <div class="form-group">
+                                        <label for="desa">Desa</label>
+                                        <select class="form-control @error('desa') is-invalid @enderror" id="desa"  name="desa" required>
+                                            <option >Pilih desa ..</option>
+                                            @foreach ($villages as $desa)
+                                                <option value="{{ $desa->name}}">{{$desa->name}}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('desa') <span class="text-danger">{{$message}}</span> @enderror                               
                            
                                     </div><!--end form-group-->
 
@@ -100,4 +137,38 @@
 @include('layouts.partials.footer')
 
 @endsection
+
+{{-- <script>
+    $(function(){
+        $.ajaxSetup({
+        headers: {'X-CSRF-TOKEN': $('meta[name="csrf_token"]').attr(content)},
+        });
+        
+        $(function(){
+            $('#provinsi').on('change', function(){
+                let id_provinsi = $('#provinsi').val();
+                
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('getKabupaten') }}",
+                    data: "{id_provinsi:id_provinsi}",
+                    cache: false,
+
+                    success: function(msg){
+                        $('#kabupaten').html(msg);
+                        $('#kecamatan').html('');
+                        $('#desa').html('');
+                    },
+
+                    error: function(data){
+                        console.log('error',data);
+                    }
+
+                });
+
+
+            });
+        });
+    });
+</script> --}}
     

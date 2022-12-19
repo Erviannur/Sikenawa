@@ -50,37 +50,38 @@
 
             <div class="table-responsive">
               <table class="table table-sm mb-0 table-borderless">
+                @foreach($pengaduan as $key => $pengaduan)
                 <tr>
                     <td> <p class="text-dark"> <small> Tanggal Pengaduan </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> 25 Desember 2022 </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->tanggal}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Nama </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> Jason D.guard </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->name}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Nomor </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> 081234768765 </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->nomer}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> E-mail </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> example@gmail.com </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->email}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Lokasi </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> Jalan Arteri Raya 17, RT 06 RW 07, Kelurahan Macanan, Kecamatan Bumiayu, Kota Surabaya  </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->idLokasi}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Isi Aduan </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aut! </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->keterangan}}</small> </p> </td>
                 </tr> 
-                      
+                @endforeach 
               </table>
           </div>       
             
@@ -103,16 +104,6 @@
               </div>
               @foreach($pengaduan as $key => $pengaduan)
               <div class="col-lg-8">
-<<<<<<< HEAD
-                <p>10 Desember 2022</p>
-                <p>Lorem, ipsum dolor sit amet </p>
-                <p>08766788931</p>
-                <p>example@gmail.com</p>
-                <p>Jalan Arteri Raya 17, RT 06 RW 07, Kelurahan Macanan, Kecamatan Bumiayu, Kota Surabaya</p>
-                <p class="" style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quae iste? Earum amet eaque eos id exercitationem voluptas quasi at porro similique reprehenderit, deleniti optio quod tempore minima possimus vero. Quidem maxime incidunt rerum neque magni molestiae sapiente dignissimos possimus esse tempora inventore suscipit quibusdam dolor, reprehenderit a et corporis tenetur consectetur. Nemo ad incidunt eveniet ex neque ipsa non minus tenetur nisi, expedita veritatis iusto aliquid animi quas cum iure praesentium quaerat, voluptas eaque reprehenderit sit! Doloremque nulla consectetur obcaecati, ipsum laboriosam quasi vel modi magni enim similique, beatae, fugiat culpa. Laboriosam sit rerum tempora doloremque similique, dolor ab?</p>
-              </div>
-            </div> --}}
-=======
                 <p>{{$pengaduan->tanggal}}</p>
                 <p>{{$pengaduan->name}}</p>
                 <p>{{$pengaduan->nomer}}</p>
@@ -122,8 +113,7 @@
                 </div>
               @endforeach
             </div>
->>>>>>> 2433afbf40dfd982371fe24d12c24780dedcb314
-            
+            --}}
           </div>
           <div class="d-flex justify-content-center mb-3">
             <div class="btn-list">

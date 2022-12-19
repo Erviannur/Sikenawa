@@ -19,8 +19,13 @@ class Pengaduan extends Model
         'nomer',
         'email',
         'tanggal',
+        'provinsi',
+        'kabupaten',
+        'kecamatan',
+        'desa',
         'keterangan',
-        'idLokasi'
+        
+
 
     ];
 
@@ -32,9 +37,9 @@ class Pengaduan extends Model
     //     });
     // }
 
-    public function Lokasi(){
-        return $this->hasMany(Lokasi::class);
-    }
+    // public function Lokasi(){
+    //     return $this->hasMany(Lokasi::class);
+    // }
 
     public function Status(){
         return $this->belongTo(Status::class);

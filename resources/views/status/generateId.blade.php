@@ -63,7 +63,7 @@
             </div><!--end col-->           
         </div><!--end row-->
     </div>
-    <!-- End Log In page -->)
+    <!-- End Log In page -->
 </div>
 
 @include('layouts.partials.footer')

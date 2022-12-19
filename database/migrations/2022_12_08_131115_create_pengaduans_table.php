@@ -19,12 +19,12 @@ return new class extends Migration
             $table->string('nomer');
             $table->string('email');
             $table->date('tanggal');
-            $table->unsignedBigInteger('idLokasi');
+            $table->string('provinsi');
+            $table->string('kabupaten')->nullable();
+            $table->string('kecamatan')->nullable();
+            $table->string('desa');
             $table->string('keterangan');
             $table->timestamps();
-            $table->foreign('idLokasi')
-                 ->references('idLokasi')
-                 ->on('lokasis');
         });
     }
 
