@@ -162,37 +162,6 @@
 
 @include('layouts.partials.footer')
 
-<<<<<<< HEAD
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalMd1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">ID</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            {{-- @foreach ($pengaduans as $pengaduan)
-            <h4 class="text-center">{{ $pengaduan->$idPengaduan}}</h4>
-            @endforeach --}}
-            <p class="text-center mt-3">Berikut  adalah ID anda untuk memeriksa Status pengiriman laporan pengaduan
-                (Harap Screenshot/Tangkap Layar,untuk mengingat ID.)</p>
-            <h3 class="text-center px-2">A01</h3>
-          </div>
-          <div class="form-group mb-0 row">
-            <div class="col-12 mt-2">
-                <button class="btn btn-success btn-round btn-block waves-effect waves-light" action="">Cek status <i class="fas fa-sign-in-alt ml-1"></i></button>
-            </div><!--end col--> 
-        </div> <!--end form-group-->
-        </div>
-      </div>
-    </div>
-
-=======
->>>>>>> 71b510d3459cb5e4f3b997acce90f1eca87c149d
 @endsection
 
 {{-- <script>
