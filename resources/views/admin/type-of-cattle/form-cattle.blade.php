@@ -14,18 +14,15 @@
   <div class="page-breadcrumb">
       <div class="row">
           <div class="col-7 align-self-center">
-              <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Ulasan Pengaduan</h3>
+              <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Jenis Hewan Ternak</h3>
               <div class="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
-                            <a href="">Data Pengaduan</a>
+                            <a href="index.html">Jenis Hewan Ternak</a>
                           </li>
                           <li class="breadcrumb-item">
-                            <a href="">Ulasan Pengaduan</a>
-                          </li>
-                          <li class="breadcrumb-item">
-                            <a href="">Balasan Pengaduan</a>
+                            <a href="index.html">Tambah Jenis Hewan Ternak</a>
                           </li>
                       </ol>
                   </nav>
@@ -47,36 +44,46 @@
     <!-- ============================================================== -->
     
     <div class="row">
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-
-            <form action="">
-              <div class="form-group">
-                <label for="">Masukan saran pertolongan pertama</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+      <div class="col-12">
+          <div class="card">
+              <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-5">
+                        <h3 class="text-dark">Tambah Hewan Ternak</h3>
+                        <p class="text-muted" style="font-size: 10px;"><span>Pastikan nama hewan yang anda masukan benar</span></p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card">
+                          <div class="card-body  shadow-sm">
+                            <form action="">
+                              <div class="form-group">
+                                <label for="">Nama Hewan <span class="text-danger">*</span></label>
+                                <div class="input-group mb-3">                                                                                                             
+                                    <input type="text" class="form-control" id="" placeholder="Masukan Nama Hewan" name="" >
+                                </div>  
+                              </div>
+                              <div class="form-group mb-0 row">
+                                <div class="col-12 mt-2">
+                                    <a href="{{ route('generate-code-report.user')}}">
+                                        <button class="btn btn-success btn-round btn-block waves-effect waves-light">Simpan <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                    </a>
+                                </div><!--end col--> 
+                            </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
               </div>
-            </form>
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <a href="{{ route('success-report.admin')}}">
-                  <button class="btn btn-success">Kirim dan berangkat menuju lokasi</button>
-                </a>
-
-              </div>
-            </div>
-
           </div>
-        </div>
-        
       </div>
-    </div>
-
+  </div>
 
     <!-- ============================================================== -->
     <!-- End Content  -->
     <!-- ============================================================== -->
       
+
   </div>
   <!-- ============================================================== -->
   <!-- End Container fluid  -->

@@ -14,24 +14,20 @@
   <div class="page-breadcrumb">
       <div class="row">
           <div class="col-7 align-self-center">
-              <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Akun Pengguna</h3>
+              <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Buat Akun Baru</h3>
               <div class="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
                             <a href="index.html">Akun</a>
                           </li>
+                          <li class="breadcrumb-item">
+                            <a href="index.html">Tambah Akun</a>
+                          </li>
                       </ol>
                   </nav>
               </div>
           </div>
-          <div class="col-5 align-self-center">
-            <div class="customize-input float-right">
-              <a href="{{ route('add-user.admin')}}">
-                <button class="btn btn-success btn-sm">Tambah Akun</button>
-              </a>
-            </div>
-        </div>
       </div>
   </div>
   <!-- ============================================================== -->
@@ -51,36 +47,38 @@
       <div class="col-12">
           <div class="card">
               <div class="card-body">
-                  <div class="table-responsive">
-                      <table id="zero_config" class="table table-striped table-bordered no-wrap">
-                          <thead>
-                              <tr>
-                                  <th>No</th>
-                                  <th>Email</th>
-                                  <th>Password</th>
-                                  <th>Opsi</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td>1</td>
-                                  <td>erviannur@gmail.com</td>
-                                  <td>92353bb0685dd9c566a17f822b21ded5</td>
-                                  <td>
-                                    <a href="">
-                                      <button class="btn btn-sm btn-warning btn-rounded">
-                                        <i class="fas fa-edit"></i>
-                                      </button>
+                  <div class="row">
+                    <div class="col-lg-5">
+                        <h3 class="text-dark">Buat Akun Baru</h3>
+                        <p class="text-muted" style="font-size: 10px;"><span>Pastikan data yang anda masukan benar</span></p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card">
+                          <div class="card-body  shadow-sm">
+                            <form action="">
+                              <div class="form-group">
+                                <label for="">Email <span class="text-danger">*</span></label>
+                                <div class="input-group mb-3">                                                                                                             
+                                    <input type="text" class="form-control" id="" placeholder="Masukan Nama Hewan" name="" >
+                                </div>  
+                              </div>
+                              <div class="form-group">
+                                <label for="">Password <span class="text-danger">*</span></label>
+                                <div class="input-group mb-3">                                                                                                             
+                                    <input type="password" class="form-control" id="" placeholder="Masukan Nama Hewan" name="" >
+                                </div>  
+                              </div>
+                              <div class="form-group mb-0 row">
+                                <div class="col-12 mt-2">
+                                    <a href="{{ route('generate-code-report.user')}}">
+                                        <button class="btn btn-success btn-round btn-block waves-effect waves-light">Simpan <i class="fas fa-sign-in-alt ml-1"></i></button>
                                     </a>
-                                    <a href="">
-                                      <button class="btn btn-sm btn-danger btn-rounded" >
-                                        <i class="fas fa-trash"></i>
-                                      </button>
-                                    </a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
+                                </div><!--end col--> 
+                            </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
                   </div>
               </div>
           </div>

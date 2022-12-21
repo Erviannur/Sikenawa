@@ -66,55 +66,55 @@
         </div><!--end col-->  
     </div><!--end row--> --}}
 
-    <div class="row pt-200 pb-100" style="justify-content:center;">
-        <div class="col-md-8 col-sm-6 col-12">
-            <div class="card shadow-sm" style="height: 100%">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-9 col-sm-8 col-12">
-                            <ol class="tick-mark mt-3 mb-0">
-                                <li>
-                                    <div class="bubble"></div>
-                                    <p class="title">Pengajuan telah dikirim</p>
-                                    <p class="font-italic"> <small>20/12/2002</small> </p>
-                                </li>
-                                <li>
-                                    <div class="bubble"></div>
-                                    <p class="title m-0 p-0">Pengajuan telah diterima</p>
-                                    <p class="font-italic"> <small>20/12/2002</small> </p>
-                                </li>
-                                <li>
-                                    <div class="bubble"></div>
-                                    <p class="title m-0 p-0 mb-0">Petugas ke lokasi untuk melakukan pengecekan</p>
-                                    <p class="font-italic mb-0"> <small>20/12/2002</small> </p>
-                                </li>
-                                <li>
-                                    <div class="bubble"></div>
-                                    <p class="title">Pemeriksaan selesai</p>
-                                </li>
-                            </ol>
+        <div class="row pt-200 pb-100" style="justify-content:center;">
+            <div class="col-md-8 col-sm-6 col-12">
+                <div class="card shadow-sm" style="height: 100%">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-9 col-sm-8 col-12">
+                                <ol class="tick-mark mt-3 mb-0">
+                                    <li>
+                                        <div class="bubble"></div>
+                                        <p class="title">Pengajuan telah dikirim</p>
+                                        <p class="font-italic"> <small>20/12/2002</small> </p>
+                                    </li>
+                                    <li>
+                                        <div class="bubble"></div>
+                                        <p class="title m-0 p-0">Pengajuan telah diterima</p>
+                                        <p class="font-italic"> <small>20/12/2002</small> </p>
+                                    </li>
+                                    <li>
+                                        <div class="bubble"></div>
+                                        <p class="title m-0 p-0 mb-0">Petugas ke lokasi untuk melakukan pengecekan</p>
+                                        <p class="font-italic mb-0"> <small>20/12/2002</small> </p>
+                                    </li>
+                                    <li>
+                                        <div class="bubble"></div>
+                                        <p class="title">Pemeriksaan selesai</p>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <div class="card shadow-sm" style="height: 100%">
-                <div class="card-body" style="background-color: rgb(120, 242, 120);">
-                    <h5 class="text-center mb-3">Keterangan</h5>
-                    <ol class="text-dark">
-                        <li>
-                            <p class="text-dark small"><i class="fa fa-circle fa-2xs px-2"></i> Menunggu verifikasi admin</p>
-                        </li>
-                        <li>
-                            <p class="text-dark small"><i class="fa fa-circle fa-2xs px-2"></i> Menunggu verifikasi admin</p>
-                        </li>
-                        
-                    </ol>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card shadow-sm" style="height: 100%">
+                    <div class="card-body" style="background-color: rgb(120, 242, 120);">
+                        <h5 class="text-center mb-3">Keterangan</h5>
+                        <ol class="text-dark">
+                            <li>
+                                <p class="text-dark small"><i class="fa fa-circle fa-2xs px-2"></i> Menunggu verifikasi admin</p>
+                            </li>
+                            <li>
+                                <p class="text-dark small"><i class="fa fa-circle fa-2xs px-2"></i> Menunggu verifikasi admin</p>
+                            </li>
+                            
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
     

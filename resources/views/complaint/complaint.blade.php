@@ -35,30 +35,34 @@
                                 <form class="form-horizontal auth-form my-4" action="{{ route('pengaduan.store') }}" method="POST">
                                     @csrf
                                     <div class="form-group">
-                                        <label for="name">Nama</label>
+                                        <label for="name">Nama <span class="text-danger">*</span> </label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="name" placeholder="Masukan Nama" name="name" required>
+                                            <input type="text" class="form-control" id="name" placeholder="Masukan Nama" name="name" >
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="nomer">Nomer Hp</label>
+                                        <label for="nomer">Nomer Hp <span class="text-danger">*</span></label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="nomer" placeholder="Masukan Nomer Hp" name="nomer" required>
+                                            <input type="text" class="form-control" id="nomer" placeholder="Masukan Nomer Hp" name="nomer" >
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="email">Email</label>
+                                        <label for="email">Email <span class="text-danger">*</span></label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="email" class="form-control" id="email" placeholder="Masukan Email" name="email" required>
+                                            <input type="email" class="form-control" id="email" placeholder="Masukan Email" name="email" >
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
+<<<<<<< HEAD
                                         <label for="tanggal">Tanggal</label>
+=======
+                                        <label for="tanggal">tanggal <span class="text-danger">*</span></label>
+>>>>>>> 71b510d3459cb5e4f3b997acce90f1eca87c149d
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="date" class="form-control" id="tanggal" placeholder="Masukan tanggal" name="tanggal" required>
+                                            <input type="date" class="form-control" id="tanggal" placeholder="Masukan tanggal" name="tanggal" >
                                         </div>                                    
                                     </div><!--end form-group--> 
 
@@ -111,15 +115,37 @@
                                     </div><!--end form-group-->
 
                                     <div class="form-group">
-                                        <label for="keterangan">Keterangan</label>
+                                        <label for="keterangan">Keterangan <span class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
                                             <textarea type="text" class="form-control" id="keterangan" placeholder="isi aduan" name="keterangan"  rows="5"> </textarea>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
+                                    <div class="form-group">
+                                        <label for="idLokasi">Masukan Gambar jika ada </label>
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Jenis Ternak <span class="text-danger">*</span></label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <option selected="">Pilih Hewan Ternak</option>
+                                        <option>Sapi</option>
+                                        <option>Kambing</option>
+                                        <option>Unggas</option>
+                                        <option>Ayam</option>
+                                        <option>Kuda</option>
+                                        </select>
+                                    </div>
+
                                     <div class="form-group mb-0 row">
                                         <div class="col-12 mt-2">
-                                            <button class="btn btn-success btn-round btn-block waves-effect waves-light" data-toggle="modal" data-target="#modalMd1">Kirim <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                            <a href="{{ route('generate-code-report.user')}}">
+                                                <button class="btn btn-success btn-round btn-block waves-effect waves-light">Kirim <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                            </a>
                                         </div><!--end col--> 
                                     </div> <!--end form-group-->                           
                                 </form><!--end form-->
@@ -136,6 +162,7 @@
 
 @include('layouts.partials.footer')
 
+<<<<<<< HEAD
 
     <!-- Modal -->
     <div class="modal fade" id="modalMd1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -164,6 +191,8 @@
       </div>
     </div>
 
+=======
+>>>>>>> 71b510d3459cb5e4f3b997acce90f1eca87c149d
 @endsection
 
 {{-- <script>

@@ -52,7 +52,7 @@
               <table class="table table-sm mb-0 table-borderless">
                 @foreach($pengaduan as $key => $pengaduan)
                 <tr>
-                    <td> <p class="text-dark"> <small> Tanggal Pengaduan </small> </p> </td>
+                    <td> <p class="text-dark"> <small> Tanggal </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
                     <td> <p class="text-dark"> <small>{{$pengaduan->tanggal}}</small> </p> </td>
                 </tr> 
@@ -75,6 +75,16 @@
                     <td> <p class="text-dark"> <small> Lokasi </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
                     <td> <p class="text-dark"> <small>{{$pengaduan->idLokasi}}</small> </p> </td>
+                </tr> 
+                <tr>
+                    <td> <p class="text-dark"> <small> Gambar </small> </p> </td>
+                    <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
+                    <td> <img src="{{ asset('assets/images/sapi/animals.jpg')}}" class="img-fluid" alt="...">  </td>
+                </tr> 
+                <tr>
+                    <td> <p class="text-dark"> <small> Nama Hewan </small> </p> </td>
+                    <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
+                    <td> <p class="text-dark"> <small>Bebek</small> </p>  </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Isi Aduan </small> </p> </td>

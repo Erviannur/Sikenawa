@@ -21,7 +21,6 @@
 </header>
 
 
-<div class="background-image-auth">
     <div class="container-fluid">
         <div class="row pt-50" style="justify-content:center;">
             <div class="col-lg-4 align-self-center">
@@ -97,6 +96,6 @@
         </div><!--end row-->
     </div>
     <!-- End Log In page -->
-</div>
+
 
 @endsection
