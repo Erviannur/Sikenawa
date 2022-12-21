@@ -26,6 +26,8 @@ class Pengaduan extends Model
         'keterangan',
         'status',
         'balasan',
+        'jenisHewan',
+        'foto',
         
 
 

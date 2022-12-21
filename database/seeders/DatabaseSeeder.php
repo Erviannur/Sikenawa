@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
 use App\Models\Lokasi;
+use App\Models\Jenis_ternak;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -27,6 +28,24 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' => bcrypt('admin'),
         ]);
+
+        Jenis_ternak::create([
+            'name' => 'Sapi'
+        ]);
+        Jenis_ternak::create([
+            'name' => 'Kambing'
+        ]);
+        Jenis_ternak::create([
+            'name' => 'Unggas'
+        ]);
+        Jenis_ternak::create([
+            'name' => 'Ayam'
+        ]);
+        Jenis_ternak::create([
+            'name' => 'Kuda'
+        ]);
+
+
 
         // Lokasi::create(
         // [   //lokasi1

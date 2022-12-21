@@ -26,6 +26,8 @@ return new class extends Migration
             $table->string('keterangan');
             $table->string('status')->nullable();
             $table->string('balasan')->nullable();
+            $table->string('jenisHewan');
+            $table->string('foto');
             $table->timestamps();
         });
     }
