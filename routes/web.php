@@ -44,6 +44,10 @@ Route::get('notifications', function () {
 Route::resource('report', ReportController::class);
 Route::resource('viewreport', ViewreportController::class);
 
+
+
+
+
 Route::get('accept-report', function () {
     return view('admin.report.accept-report');
 })->name('accept-report.admin');
@@ -56,10 +60,6 @@ Route::get('failed-report', function () {
     return view('admin.report.block-report');
 })->name('failed-report.admin');
 
-Route::get('confirm-officer', function () {
-    return view('admin.confirm-officer.confirm-officer');
-})->name('confirm-officer.admin');
-
 Route::get('map-data', function () {
     return view('admin.map_data.map_data');
 })->name('data-map.admin');
@@ -68,10 +68,20 @@ Route::get('maps', function () {
     return view('admin.map.map');
 })->name('maps.admin');
 
+Route::get('type-of-cattle', function () {
+    return view('admin.type-of-cattle.type-of-cattle');
+})->name('type-of-cattle.admin');
+Route::get('add-type-of-cattle', function () {
+    return view('admin.type-of-cattle.form-cattle');
+})->name('add-type-of-cattle.admin');
+
 Route::get('users', function () {
     return view('admin.user.user');
 })->name('user.admin');
 
+Route::get('add-user', function () {
+    return view('admin.user.form-user');
+})->name('add-user.admin');
 
 
 // User
@@ -85,6 +95,9 @@ Route::get('complaint', function () {
 
 Route::resource('pengaduan', PengaduanController::class);
 
+Route::get('generate-code-report', function () {
+    return view('complaint.generate-code');
+})->name('generate-code-report.user');
 
 Route::get('generate-id', function () {
     return view('status.generateId');

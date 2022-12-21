@@ -26,15 +26,15 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link" href="{{ route('confirm-officer.admin')}}" aria-expanded="false">
-                    <i class="fa fa-check"></i>
-                    <span class="hide-menu">Konfirmasi Petugas</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
                   <a class="sidebar-link" href="{{ route('data-map.admin')}}" aria-expanded="false">
                     <i class="fas fa-map"></i>
                     <span class="hide-menu">Data Peta</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link" href="{{ route('type-of-cattle.admin')}}" aria-expanded="false">
+                    <i class="fas fa-paw"></i>
+                    <span class="hide-menu">Jenis Ternak</span>
                   </a>
                 </li>
                 <li class="sidebar-item">

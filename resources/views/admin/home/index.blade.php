@@ -43,14 +43,13 @@
                   <div class="d-flex d-lg-flex d-md-block align-items-center">
                       <div>
                           <div class="d-inline-flex align-items-center">
-                              <h2 class="text-dark mb-1 font-weight-medium">236</h2>
-                              <span
-                                  class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-lg-block d-md-none">+18.33%</span>
+                              <h2 class="text-dark mb-1 font-weight-medium">3</h2>
+                              
                           </div>
-                          <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">New Clients</h6>
+                          <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Akun</h6>
                       </div>
                       <div class="ml-auto mt-md-3 mt-lg-0">
-                          <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
+                          <span class="opacity-7 text-muted"><i class="fas fa-user-plus fa-lg"></i></span>
                       </div>
                   </div>
               </div>
@@ -59,13 +58,12 @@
               <div class="card-body">
                   <div class="d-flex d-lg-flex d-md-block align-items-center">
                       <div>
-                          <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium"><sup
-                                  class="set-doller">$</sup>18,306</h2>
-                          <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Earnings of Month
+                          <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium">10</h2>
+                          <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Jenis Hewan
                           </h6>
                       </div>
                       <div class="ml-auto mt-md-3 mt-lg-0">
-                          <span class="opacity-7 text-muted"><i data-feather="dollar-sign"></i></span>
+                          <span class="opacity-7 text-muted"><i class="fas fa-paw fa-lg"></i></span>
                       </div>
                   </div>
               </div>
@@ -75,31 +73,17 @@
                   <div class="d-flex d-lg-flex d-md-block align-items-center">
                       <div>
                           <div class="d-inline-flex align-items-center">
-                              <h2 class="text-dark mb-1 font-weight-medium">1538</h2>
-                              <span
-                                  class="badge bg-danger font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">-18.33%</span>
+                              <h2 class="text-dark mb-1 font-weight-medium">20</h2>
                           </div>
-                          <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">New Projects</h6>
+                          <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Pengaduan</h6>
                       </div>
                       <div class="ml-auto mt-md-3 mt-lg-0">
-                          <span class="opacity-7 text-muted"><i data-feather="file-plus"></i></span>
+                          <span class="opacity-7 text-muted"><i class="fas fa-book fa-lg"></i></span>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="card">
-              <div class="card-body">
-                  <div class="d-flex d-lg-flex d-md-block align-items-center">
-                      <div>
-                          <h2 class="text-dark mb-1 font-weight-medium">864</h2>
-                          <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Projects</h6>
-                      </div>
-                      <div class="ml-auto mt-md-3 mt-lg-0">
-                          <span class="opacity-7 text-muted"><i data-feather="globe"></i></span>
-                      </div>
-                  </div>
-              </div>
-          </div>
+          
       </div>
       <!-- *************************************************************** -->
       <!-- End First Cards -->
@@ -113,35 +97,28 @@
               <div class="card">
                   <div class="card-body">
                       <div class="d-flex align-items-center mb-4">
-                          <h4 class="card-title">Notifikasi Masuk</h4>
+                          <h4 class="card-title">Akun Pengguna</h4>
                       </div>
                       <div class="table-responsive">
                           <table class="table no-wrap v-middle mb-0">
                               <thead>
                                   <tr class="border-0">
-                                      <th class="border-0 font-14 font-weight-medium text-muted">Team Lead
-                                      </th>
-                                      <th class="border-0 font-14 font-weight-medium text-muted px-2">Project
-                                      </th>
-                                      <th class="border-0 font-14 font-weight-medium text-muted">Team</th>
-                                      <th class="border-0 font-14 font-weight-medium text-muted">Data</th>
-
+                                      <th class="border-0 font-14 font-weight-medium text-muted">No</th>
+                                      <th class="border-0 font-14 font-weight-medium text-muted px-2">Email</th>
+                                      <th class="border-0 font-14 font-weight-medium text-muted">Password</th>
                                   </tr>
                               </thead>
                               <tbody>
                                   <tr>
+                                    <td class="border-top-0 px-2 py-4">1</td>
                                       <td class="border-top-0 px-2 py-4">
                                           <div class="d-flex no-block align-items-center">
                                               <div class="">
-                                                  <h5 class="text-dark mb-0 font-16 font-weight-medium">Hanna
-                                                      Gover</h5>
                                                   <span class="text-muted font-14">hgover@gmail.com</span>
                                               </div>
                                           </div>
                                       </td>
-                                      <td class="border-top-0 text-muted px-2 py-4 font-14">Elite Admin</td>
-                                      <td class="border-top-0 text-center font-weight-medium text-muted px-2 py-4"> 35</td>
-                                      <td class="font-weight-medium text-dark border-top-0 px-2 py-4">$96K
+                                      <td class="border-top-0 text-muted px-2 py-4 font-14">vh2vgvj!fvjfv@vjvhertyuiijhygybbm </td>
                                       </td>
                                   </tr>
                               </tbody>

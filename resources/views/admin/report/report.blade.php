@@ -51,6 +51,7 @@
                                   <th>No</th>
                                   <th>Tanggal</th>
                                   <th>Nama</th>
+                                  <th>Status</th>
                                   <th>Opsi</th>
                               </tr>
                           </thead>
@@ -60,6 +61,14 @@
                                   <td>{{$key+1}}</td>
                                   <td>{{$pengaduan->tanggal}}</td>
                                   <td>{{$pengaduan->name}}</td>
+                                  <td>
+                                    <p>Petugas Menuju Lokasi <button class="btn btn-sm btn-warning btn-rounded">Selesai</button> </p>
+                                    
+                                    {{-- Jika admin sudah melakkukan pengecekan ke lokasi pencet tombol selesai 
+                                      kemudian status berubah menajadi Sudah selesai dan button hilang  --}}
+                                    
+
+                                  </td>
                                   <td>
                                     <a href="{{ route('viewreport.index')}}">
                                       <button class="btn btn-sm btn-success btn-rounded" >
