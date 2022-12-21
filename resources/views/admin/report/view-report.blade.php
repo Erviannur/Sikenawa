@@ -50,30 +50,31 @@
 
             <div class="table-responsive">
               <table class="table table-sm mb-0 table-borderless">
+                @foreach($pengaduan as $key => $pengaduan)
                 <tr>
                     <td> <p class="text-dark"> <small> Tanggal </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> 25 Desember 2022 </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->tanggal}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Nama </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> Jason D.guard </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->name}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Nomor </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> 081234768765 </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->nomer}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> E-mail </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> example@gmail.com </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->email}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Lokasi </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> Jalan Arteri Raya 17, RT 06 RW 07, Kelurahan Macanan, Kecamatan Bumiayu, Kota Surabaya  </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->idLokasi}}</small> </p> </td>
                 </tr> 
                 <tr>
                     <td> <p class="text-dark"> <small> Gambar </small> </p> </td>
@@ -88,12 +89,45 @@
                 <tr>
                     <td> <p class="text-dark"> <small> Isi Aduan </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aut! </small> </p> </td>
+                    <td> <p class="text-dark"> <small>{{$pengaduan->keterangan}}</small> </p> </td>
                 </tr> 
-                      
+                @endforeach 
               </table>
           </div>       
             
+<<<<<<< HEAD
+            {{-- <div class="row">
+              <div class="col-lg-3">
+                <p>Tanggal Pengaduan</p>
+                <p>Nama</p>
+                <p>Nomor Hp</p>
+                <p>E-mail</p>
+                <p>Lokasi</p>
+                <p>Isi Aduan</p>
+              </div>
+              <div class="col-lg-1" style="text-align: right">
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+              </div>
+              @foreach($pengaduan as $key => $pengaduan)
+              <div class="col-lg-8">
+                <p>{{$pengaduan->tanggal}}</p>
+                <p>{{$pengaduan->name}}</p>
+                <p>{{$pengaduan->nomer}}</p>
+                <p>{{$pengaduan->email}}</p>
+                <p>{{$pengaduan->idLokasi}}</p>
+                <p>{{$pengaduan->keterangan}}</p>
+                </div>
+              @endforeach
+            </div>
+            --}}
+          </div>
+=======
+>>>>>>> 3412f05c30b190a5679a18eb613a7fa30625db9f
           <div class="d-flex justify-content-center mb-3">
             <div class="btn-list">
               <a href="{{ route('failed-report.admin') }}">

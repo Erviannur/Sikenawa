@@ -94,6 +94,7 @@ Route::get('complaint', function () {
 })->name('complaint.user');
 
 Route::resource('pengaduan', PengaduanController::class);
+//Route::post('getKabupaten',[PengaduanController::class, 'getKabupaten'])->name('getKabupaten');
 
 Route::get('generate-code-report', function () {
     return view('complaint.generate-code');

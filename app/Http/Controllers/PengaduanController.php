@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lokasi;
+use App\Models\Regency;
+use App\Models\Village;
+use App\Models\District;
+use App\Models\Province;
 use App\Models\Pengaduan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -17,7 +21,7 @@ class PengaduanController extends Controller
      */
     public function index()
     {
-        $pengaduan = Pengaduan::all();
+        
         return view('complaint.complaint', [
         'pengaduan' => $pengaduan]);
     }
@@ -29,8 +33,12 @@ class PengaduanController extends Controller
      */
     public function create()
     {
-        $lokasi = Lokasi::all();
-        return view('complaint.complaint',compact('lokasi'));
+        // Get semua data
+        $provinces = Province::all();
+        $regencies = Regency::all();
+        $districts = District::all();
+        $villages = Village::all();
+        return view('complaint.complaint',compact('provinces','regencies','districts','villages'));
     }
 
     /**
@@ -47,11 +55,15 @@ class PengaduanController extends Controller
             'nomer' => 'required',
             'email' => 'required',
             'tanggal' => 'required',
+            'provinsi' =>   'required',
+            'kabupaten' =>   'required',
+            'kecamatan' =>   'required',
+            'desa' =>   'required',
             'keterangan' => 'required',
-            'idLokasi' =>   'required',
+            
         ]);
         $array = $request->only([
-            'name', 'nomer', 'email','tanggal','keterangan', 'idLokasi'
+            'name', 'nomer', 'email','tanggal', 'provinsi', 'kabupaten'. 'kecamatan', 'desa','keterangan'
         ]);
         $pengaduan = Pengaduan::create($array);
         return redirect()->route('status.user')
@@ -102,4 +114,13 @@ class PengaduanController extends Controller
     {
         //
     }
+
+    // public function getKabupaten(Request $request){
+    //     $id_provinsi = $request->id_provinsi;
+    //     $kabupatens = Regency::where('province_id',$id_provinsi)->get();
+
+    //     foreach ($kabupatens as $kabupaten){
+    //         echo "<option value='$kabupaten->id'>$kabupaten->name</option>";
+    //     }
+    // }
 }
