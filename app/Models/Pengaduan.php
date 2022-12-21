@@ -24,6 +24,8 @@ class Pengaduan extends Model
         'kecamatan',
         'desa',
         'keterangan',
+        'status',
+        'balasan',
         
 
 
@@ -41,8 +43,5 @@ class Pengaduan extends Model
     //     return $this->hasMany(Lokasi::class);
     // }
 
-    public function Status(){
-        return $this->belongTo(Status::class);
-
-    }
+    
 }

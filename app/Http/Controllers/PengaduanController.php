@@ -55,19 +55,27 @@ class PengaduanController extends Controller
             'nomer' => 'required',
             'email' => 'required',
             'tanggal' => 'required',
-            'provinsi' =>   'required',
-            'kabupaten' =>   'required',
-            'kecamatan' =>   'required',
+            'provinsi' => 'required',
+            'kabupaten' => 'required',
+            'kecamatan' => 'required',
             'desa' =>   'required',
             'keterangan' => 'required',
+            'status' => 'required',
+            'balasan' => 'required',
             
         ]);
         $array = $request->only([
-            'name', 'nomer', 'email','tanggal', 'provinsi', 'kabupaten'. 'kecamatan', 'desa','keterangan'
+            'name', 'nomer', 'email','tanggal', 'provinsi', 'kabupaten'. 'kecamatan', 'desa','keterangan', 'status', 'balasan'
         ]);
         $pengaduan = Pengaduan::create($array);
-        return redirect()->route('status.user')
+        return view('status.user')
             ->with('success_message', 'Berhasil mengirim Pengaduan');
+    }
+
+    public function popup(){
+
+        $pengaduans = Pengaduan::all();
+        return view('status.user', compact('pengaduans'));
     }
 
     /**

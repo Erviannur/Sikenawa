@@ -56,7 +56,7 @@
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="tanggal">tanggal</label>
+                                        <label for="tanggal">Tanggal</label>
                                         <div class="input-group mb-3">                                                                                                             
                                             <input type="date" class="form-control" id="tanggal" placeholder="Masukan tanggal" name="tanggal" required>
                                         </div>                                    
@@ -148,11 +148,18 @@
             </button>
           </div>
           <div class="modal-body">
-            <h4 class="text-center">Nomor ID</h4>
+            {{-- @foreach ($pengaduans as $pengaduan)
+            <h4 class="text-center">{{ $pengaduan->$idPengaduan}}</h4>
+            @endforeach --}}
             <p class="text-center mt-3">Berikut  adalah ID anda untuk memeriksa Status pengiriman laporan pengaduan
                 (Harap Screenshot/Tangkap Layar,untuk mengingat ID.)</p>
             <h3 class="text-center px-2">A01</h3>
           </div>
+          <div class="form-group mb-0 row">
+            <div class="col-12 mt-2">
+                <button class="btn btn-success btn-round btn-block waves-effect waves-light" action="">Cek status <i class="fas fa-sign-in-alt ml-1"></i></button>
+            </div><!--end col--> 
+        </div> <!--end form-group-->
         </div>
       </div>
     </div>

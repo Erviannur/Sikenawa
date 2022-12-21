@@ -85,7 +85,6 @@
               </table>
           </div>       
             
-<<<<<<< HEAD
             {{-- <div class="row">
               <div class="col-lg-3">
                 <p>Tanggal Pengaduan</p>
@@ -116,8 +115,6 @@
             </div>
             --}}
           </div>
-=======
->>>>>>> 3412f05c30b190a5679a18eb613a7fa30625db9f
           <div class="d-flex justify-content-center mb-3">
             <div class="btn-list">
               <a href="{{ route('failed-report.admin') }}">

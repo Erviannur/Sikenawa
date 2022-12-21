@@ -18,9 +18,9 @@ return new class extends Migration
             $table->unsignedBigInteger('idStatus');
             $table->date('tanggal');
             $table->timestamps();
-            $table->foreign('idStatus')
-                 ->references('idStatus')
-                 ->on('statuses');
+            // $table->foreign('idStatus')
+            //      ->references('idStatus')
+            //      ->on('statuses');
         });
     }
 
