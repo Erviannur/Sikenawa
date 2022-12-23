@@ -179,9 +179,5 @@
     
     <!--====== CONTACT PART ENDS ======-->
 
-
-    <!-- Modal -->
-    <a href="#" class="call-center"><i class="lni-chevron-up"></i>Pusat Bantuan</a>    
-
     @include('layouts.partials.footer')
     @endsection

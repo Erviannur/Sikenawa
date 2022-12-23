@@ -20,8 +20,6 @@
     </div> <!-- navigation -->
 </header>
 
-
-<div class="background-image-auth" >
     <div class="container-fluid">
         <div class="row pt-100" style="justify-content:center;">
             <div class="col-lg-4 align-self-center">
@@ -64,7 +62,6 @@
         </div><!--end row-->
     </div>
     <!-- End Log In page -->
-</div>
 
 @include('layouts.partials.footer')
 @endsection

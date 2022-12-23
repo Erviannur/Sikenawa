@@ -54,13 +54,16 @@
 
     <!--====== PRELOADER ENDS START ======-->
 
+    
+
+
 
     @yield('content')
 
-      
+     
     
     <!-- Modal -->
-    <div class="modal fade" id="modalMd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{-- <div class="modal fade" id="modalMd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -75,9 +78,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
   
-  <a href="#" class="call-center"><i class="lni-chevron-up"></i></a>        
+
+      
   
 
 <!--====== jquery js ======-->

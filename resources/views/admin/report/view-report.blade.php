@@ -95,39 +95,7 @@
               </table>
           </div>       
             
-<<<<<<< HEAD
-            {{-- <div class="row">
-              <div class="col-lg-3">
-                <p>Tanggal Pengaduan</p>
-                <p>Nama</p>
-                <p>Nomor Hp</p>
-                <p>E-mail</p>
-                <p>Lokasi</p>
-                <p>Isi Aduan</p>
-              </div>
-              <div class="col-lg-1" style="text-align: right">
-                <p>:</p>
-                <p>:</p>
-                <p>:</p>
-                <p>:</p>
-                <p>:</p>
-                <p>:</p>
-              </div>
-              @foreach($pengaduan as $key => $pengaduan)
-              <div class="col-lg-8">
-                <p>{{$pengaduan->tanggal}}</p>
-                <p>{{$pengaduan->name}}</p>
-                <p>{{$pengaduan->nomer}}</p>
-                <p>{{$pengaduan->email}}</p>
-                <p>{{$pengaduan->idLokasi}}</p>
-                <p>{{$pengaduan->keterangan}}</p>
-                </div>
-              @endforeach
-            </div>
-            --}}
           </div>
-=======
->>>>>>> 3412f05c30b190a5679a18eb613a7fa30625db9f
           <div class="d-flex justify-content-center mb-3">
             <div class="btn-list">
               <a href="{{ route('failed-report.admin') }}">

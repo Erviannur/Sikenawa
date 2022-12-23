@@ -1,9 +1,14 @@
 
 
-
 <!--====== FOOTER PART START ======-->
+<a href="" target="_blank">
+  <button class="call-center">
+      <img src="{{ asset('assets/images/logo/wa.png')}}" alt="">
+      <span>(+62) 82141368195</span>
+  </button>
+</a> 
 
-<footer id="footer" class="footer-area fixed-bottom">
+<footer id="footer" class="footer-area fixed-bottom" >
     <div class="footer-copyright">
       <div class="container">
           <div class="row">
