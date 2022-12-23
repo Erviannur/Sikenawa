@@ -8,6 +8,7 @@ use App\Models\Village;
 use App\Models\District;
 use App\Models\Province;
 use App\Models\Pengaduan;
+use App\Models\Jenis_ternak;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Haruncpi\LaravelIdGenerator\IdGenerator;
@@ -38,7 +39,8 @@ class PengaduanController extends Controller
         $regencies = Regency::all();
         $districts = District::all();
         $villages = Village::all();
-        return view('complaint.complaint',compact('provinces','regencies','districts','villages'));
+        $jenis_ternak = Jenis_ternak::all();
+        return view('complaint.complaint',compact('provinces','regencies','districts','villages','jenis_ternak'));
     }
 
     /**
@@ -55,19 +57,29 @@ class PengaduanController extends Controller
             'nomer' => 'required',
             'email' => 'required',
             'tanggal' => 'required',
-            'provinsi' =>   'required',
-            'kabupaten' =>   'required',
-            'kecamatan' =>   'required',
+            'provinsi' => 'required',
+            'kabupaten' => 'required',
+            'kecamatan' => 'required',
             'desa' =>   'required',
             'keterangan' => 'required',
+            'status' => 'required',
+            'balasan' => 'required',
+            'jenisHewan' => 'required',
+            'foto' => 'image|file|max:1024',
             
         ]);
         $array = $request->only([
-            'name', 'nomer', 'email','tanggal', 'provinsi', 'kabupaten'. 'kecamatan', 'desa','keterangan'
+            'name', 'nomer', 'email','tanggal', 'provinsi', 'kabupaten'. 'kecamatan', 'desa','keterangan', 'status', 'balasan', 'jenisHewan', 'foto'
         ]);
         $pengaduan = Pengaduan::create($array);
-        return redirect()->route('status.user')
+        return route('generate-code-report.user')
             ->with('success_message', 'Berhasil mengirim Pengaduan');
+    }
+
+    public function popup(){
+
+        $pengaduans = Pengaduan::all();
+        return view('status.user', compact('pengaduans'));
     }
 
     /**

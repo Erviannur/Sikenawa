@@ -19,8 +19,5 @@ class Notifikasi extends Model
 
     ];
 
-    public function Status(){
-        return $this->belongTo(Status::class);
-
-    }
+    
 }

@@ -32,7 +32,7 @@
                                 </div> <!--end auth-logo-text-->  
     
                                 
-                                <form class="form-horizontal auth-form my-4" action="{{ route('pengaduan.store') }}" method="POST">
+                                <form class="form-horizontal auth-form my-4" action="{{ route('pengaduan.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
                                         <label for="name">Nama <span class="text-danger">*</span> </label>
@@ -56,7 +56,7 @@
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="tanggal">tanggal <span class="text-danger">*</span></label>
+                                        <label for="tanggal">Tanggal <span class="text-danger">*</span></label>
                                         <div class="input-group mb-3">                                                                                                             
                                             <input type="date" class="form-control" id="tanggal" placeholder="Masukan tanggal" name="tanggal" >
                                         </div>                                    
@@ -118,28 +118,26 @@
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="idLokasi">Masukan Gambar jika ada </label>
+                                        <label for="foto">Masukan Gambar jika ada </label>
                                         <div class="input-group mb-3">
-                                            <input type="file" class="custom-file-input" id="customFile">
-                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                            <input type="file" class="custom-file-input" id="foto" name="foto">
+                                            <label class="custom-file-label" for="foto">Choose file</label>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Jenis Ternak <span class="text-danger">*</span></label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                        <option selected="">Pilih Hewan Ternak</option>
-                                        <option>Sapi</option>
-                                        <option>Kambing</option>
-                                        <option>Unggas</option>
-                                        <option>Ayam</option>
-                                        <option>Kuda</option>
+                                        <label for="jenisHewan">Jenis Ternak <span class="text-danger">*</span></label>
+                                        <select class="form-control" id="jenisHewan" name="jenisHewan">
+                                        <option >Pilih Jenis Ternak ..</option>
+                                        @foreach ($jenis_ternak as $hewan)
+                                            <option value="{{ $hewan->name}}">{{$hewan->name}}</option>
+                                        @endforeach
                                         </select>
                                     </div>
 
                                     <div class="form-group mb-0 row">
                                         <div class="col-12 mt-2">
-                                            <a href="{{ route('generate-code-report.user')}}">
+                                            {{-- <a href="{{ route('generate-code-report.user')}}"> --}}
                                                 <button class="btn btn-success btn-round btn-block waves-effect waves-light">Kirim <i class="fas fa-sign-in-alt ml-1"></i></button>
                                             </a>
                                         </div><!--end col--> 

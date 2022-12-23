@@ -24,6 +24,10 @@ return new class extends Migration
             $table->string('kecamatan')->nullable();
             $table->string('desa');
             $table->string('keterangan');
+            $table->string('status')->nullable();
+            $table->string('balasan')->nullable();
+            $table->string('jenisHewan');
+            $table->string('foto');
             $table->timestamps();
         });
     }
