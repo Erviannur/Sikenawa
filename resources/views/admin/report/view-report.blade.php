@@ -19,9 +19,9 @@
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb m-0 p-0">
                           <li class="breadcrumb-item">
-                            <a href="">Data Pengaduan</a>                           
+                            <a href="">Data Pengaduan</a>
                           </li>
-                          <li class="breadcrumb-item">                            
+                          <li class="breadcrumb-item">
                             <a href="">Ulasan Pengaduan</a>
                           </li>
                       </ol>
@@ -33,16 +33,16 @@
   <!-- ============================================================== -->
   <!-- End Bread crumb and right sidebar toggle -->
   <!-- ============================================================== -->
-  
+
   <!-- ============================================================== -->
   <!-- Container fluid  -->
   <!-- ============================================================== -->
   <div class="container-fluid">
-    
+
     <!-- ============================================================== -->
     <!-- Content  -->
     <!-- ============================================================== -->
-    
+
     <div class="row">
       <div class="col">
         <div class="card">
@@ -50,51 +50,50 @@
 
             <div class="table-responsive">
               <table class="table table-sm mb-0 table-borderless">
-                @foreach($pengaduan as $key => $pengaduan)
+
                 <tr>
                     <td> <p class="text-dark"> <small> Tanggal </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
                     <td> <p class="text-dark"> <small>{{$pengaduan->tanggal}}</small> </p> </td>
-                </tr> 
+                </tr>
                 <tr>
                     <td> <p class="text-dark"> <small> Nama </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
                     <td> <p class="text-dark"> <small>{{$pengaduan->name}}</small> </p> </td>
-                </tr> 
+                </tr>
                 <tr>
                     <td> <p class="text-dark"> <small> Nomor </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
                     <td> <p class="text-dark"> <small>{{$pengaduan->nomer}}</small> </p> </td>
-                </tr> 
+                </tr>
                 <tr>
                     <td> <p class="text-dark"> <small> E-mail </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
                     <td> <p class="text-dark"> <small>{{$pengaduan->email}}</small> </p> </td>
-                </tr> 
+                </tr>
                 <tr>
                     <td> <p class="text-dark"> <small> Lokasi </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small>{{$pengaduan->idLokasi}}</small> </p> </td>
-                </tr> 
+                    <td> <p class="text-dark"> <small>{{$pengaduan->desas->name}}, {{$pengaduan->kecamatans->name}}, {{$pengaduan->kabupatens->name}}, {{$pengaduan->provinsis->name}}</small> </p> </td>
+                </tr>
                 <tr>
                     <td> <p class="text-dark"> <small> Gambar </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <img src="{{ asset('assets/images/sapi/animals.jpg')}}" class="img-fluid" alt="...">  </td>
-                </tr> 
+                    <td> <img src="{{ asset($pengaduan->foto)}}" class="img-fluid" alt="...">  </td>
+                </tr>
                 <tr>
                     <td> <p class="text-dark"> <small> Nama Hewan </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
-                    <td> <p class="text-dark"> <small>Bebek</small> </p>  </td>
-                </tr> 
+                    <td> <p class="text-dark"> <small>Sapi</small> </p>  </td>
+                </tr>
                 <tr>
                     <td> <p class="text-dark"> <small> Isi Aduan </small> </p> </td>
                     <td> <p class="text-dark text-right"> <small> : </small> </p> </td>
                     <td> <p class="text-dark"> <small>{{$pengaduan->keterangan}}</small> </p> </td>
-                </tr> 
-                @endforeach 
+                </tr>
               </table>
-          </div>       
-            
+          </div>
+
             {{-- <div class="row">
               <div class="col-lg-3">
                 <p>Tanggal Pengaduan</p>
@@ -143,7 +142,7 @@
     <!-- ============================================================== -->
     <!-- End Content  -->
     <!-- ============================================================== -->
-      
+
   </div>
   <!-- ============================================================== -->
   <!-- End Container fluid  -->
@@ -152,6 +151,6 @@
 </div>
 <!-- ============================================================== -->
 <!-- End Page wrapper  -->
-<!-- ============================================================== -->  
+<!-- ============================================================== -->
 
 @endsection

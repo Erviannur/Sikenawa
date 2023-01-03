@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\StatusController;
 use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ViewreportController;
@@ -42,10 +43,8 @@ Route::get('notifications', function () {
 
 
 Route::resource('report', ReportController::class);
-Route::resource('viewreport', ViewreportController::class);
-
-
-
+Route::get('viewreport/{id}', [ViewreportController::class, 'show'])->name('viewreport.show');
+// Route::resource('viewreport', ViewreportController::class);
 
 
 Route::get('accept-report', function () {
@@ -94,11 +93,12 @@ Route::get('complaint', function () {
 })->name('complaint.user');
 
 Route::resource('pengaduan', PengaduanController::class);
-//Route::post('getKabupaten',[PengaduanController::class, 'getKabupaten'])->name('getKabupaten');
+Route::post('getKabupaten',[PengaduanController::class, 'getKabupaten'])->name('getKabupaten');
+Route::post('getKecamatan',[PengaduanController::class, 'getKecamatan'])->name('getKecamatan');
+Route::post('getDesa',[PengaduanController::class, 'getDesa'])->name('getDesa');
 
-Route::get('generate-code-report', function () {
-    return view('complaint.generate-code');
-})->name('generate-code-report.user');
+Route::get('generate-code-report/{id}', [PengaduanController::class, 'generateCode'])->name('generate-code-report.user');
+Route::post('cekStatus', [StatusController::class, 'cekStatus'])->name('cekStatus');
 
 Route::get('generate-id', function () {
     return view('status.generateId');

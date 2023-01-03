@@ -30,16 +30,16 @@
   <!-- ============================================================== -->
   <!-- End Bread crumb and right sidebar toggle -->
   <!-- ============================================================== -->
-  
+
   <!-- ============================================================== -->
   <!-- Container fluid  -->
   <!-- ============================================================== -->
   <div class="container-fluid">
-    
+
     <!-- ============================================================== -->
     <!-- Content  -->
     <!-- ============================================================== -->
-    
+
     <div class="row">
       <div class="col-12">
           <div class="card">
@@ -56,21 +56,21 @@
                               </tr>
                           </thead>
                           <tbody>
-                            @foreach($pengaduan as $key => $pengaduan)
+                            @foreach($pengaduan as $key => $data)
                               <tr>
                                   <td>{{$key+1}}</td>
-                                  <td>{{$pengaduan->tanggal}}</td>
-                                  <td>{{$pengaduan->name}}</td>
+                                  <td>{{$data->tanggal}}</td>
+                                  <td>{{$data->name}}</td>
                                   <td>
                                     <p>Petugas Menuju Lokasi <button class="btn btn-sm btn-warning btn-rounded">Selesai</button> </p>
-                                    
-                                    {{-- Jika admin sudah melakkukan pengecekan ke lokasi pencet tombol selesai 
+
+                                    {{-- Jika admin sudah melakkukan pengecekan ke lokasi pencet tombol selesai
                                       kemudian status berubah menajadi Sudah selesai dan button hilang  --}}
-                                    
+
 
                                   </td>
                                   <td>
-                                    <a href="{{ route('viewreport.index')}}">
+                                    <a href="{{ route('viewreport.show', $data)}}">
                                       <button class="btn btn-sm btn-success btn-rounded" >
                                         <i class="fas fa-print"></i> Cek
                                       </button>
@@ -89,7 +89,7 @@
     <!-- ============================================================== -->
     <!-- End Content  -->
     <!-- ============================================================== -->
-      
+
   </div>
   <!-- ============================================================== -->
   <!-- End Container fluid  -->
@@ -98,6 +98,6 @@
 </div>
 <!-- ============================================================== -->
 <!-- End Page wrapper  -->
-<!-- ============================================================== -->  
+<!-- ============================================================== -->
 
 @endsection
