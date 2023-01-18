@@ -77,7 +77,16 @@ class PengaduanController extends Controller
 
     public function update(Request $request, Pengaduan $pengaduan)
     {
-        //
+        foreach($request->id as $key => $value){
+
+            // Find record to update with Model as your table model
+    
+            $record = Pengaduan::find($value);
+    
+            $record->balasan = $request->balasan[$key];
+    
+            $record->save();
+        }
     }
 
     public function destroy(Pengaduan $pengaduan)

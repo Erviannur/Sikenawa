@@ -14,7 +14,7 @@
             <li class="nav-item"><a class="page-scroll" href="{{ route('home.user')}}">Home</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('pengaduan.create') }}">Pengaduan</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('generateId.user')}}">Status</a></li>
-            <li class="nav-item"><a class="page-scroll" href="{{ route('disease-map.user')}}">Peta Penyakit</a></li>
+            <li class="nav-item"><a class="page-scroll" href="{{ route('outlet_map.index') }}">Peta Penyakit</a></li>
         </ul>
         <div class="m-lauto">
             <a href="{{ route('login') }}">

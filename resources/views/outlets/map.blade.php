@@ -1,37 +1,20 @@
 @extends('layouts.app')
-{{-- <link rel="stylesheet" href="needstyle.css"> --}}
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 
 @section('content')
-
-<header id="home" class="header-area">
-    <div class="navigation fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">   
-
-                    @include('layouts.partials.navbar')
-                    
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </div> <!-- navigation -->
-</header>
-
-<!-- Content -->
-
-
 <div class="card">
     <div class="card-body" id="mapid"></div>
 </div>
-
-
-<!-- End Content -->
-
-
-@include('layouts.partials.footer')
 @endsection
 
+@section('styles')
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+
+<style>
+    #mapid { min-height: 500px; }
+</style>
+@endsection
 @push('scripts')
 <!-- Make sure you put this AFTER Leaflet's CSS -->
 <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"

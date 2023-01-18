@@ -109,7 +109,7 @@
                                     </div><!--end form-group-->
 
                                     <div class="form-group">
-                                        <label for="foto">Masukan Gambar jika ada </label>
+                                        <label for="foto">Masukan Gambar jika ada format jpg</label>
                                         <div class="input-group mb-3">
                                             <input type="file" class="custom-file-input" id="foto" name="foto">
                                             <label class="custom-file-label" for="foto">Choose file</label>
@@ -128,7 +128,6 @@
 
                                     <div class="form-group mb-0 row">
                                         <div class="col-12 mt-2">
-                                            {{-- <a href="{{ route('generate-code-report.user')}}"> --}}
                                                 <button class="btn btn-success btn-round btn-block waves-effect waves-light">Kirim <i class="fas fa-sign-in-alt ml-1"></i></button>
                                             </a>
                                         </div><!--end col-->

@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OutletController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\StatusController;
+use App\Http\Controllers\OutletMapController;
 use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ViewreportController;
@@ -112,6 +114,20 @@ Route::get('disease-map', function () {
     return view('disease-map.disease-map');
 })->name('disease-map.user');
 
+// Route::get('/', 'OutletMapController@index');
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
+
+// /*
+//  * Outlets Routes
+//  */
+// Route::get('/our_outlets', 'OutletMapController@index')->name('outlet_map.index');
+// Route::resource('outlets', 'OutletController');
+
+Route::get('/our_outlets', 'OutletMapController@index')->name('outlet_map.index');
+Route::resource('outlets', 'OutletController');
 
 
 
