@@ -19,8 +19,6 @@
     <link href="{{ asset('administrator/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{ asset('administrator/dist/css/style.min.css') }}" rel="stylesheet">
-
-
 </head>
 
 <body>

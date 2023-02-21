@@ -1,7 +1,7 @@
 
 
 <!--====== FOOTER PART START ======-->
-<a href="" target="_blank">
+<a href="https://wa.me/6282141368195?" target="_blank">
   <button class="call-center">
       <img src="{{ asset('assets/images/logo/wa.png')}}" alt="">
       <span>(+62) 82141368195</span>

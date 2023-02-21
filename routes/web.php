@@ -45,9 +45,6 @@ Route::resource('report', ReportController::class);
 Route::resource('viewreport', ViewreportController::class);
 
 
-
-
-
 Route::get('accept-report', function () {
     return view('admin.report.accept-report');
 })->name('accept-report.admin');

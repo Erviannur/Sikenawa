@@ -54,8 +54,8 @@
                 <div class="row align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="header-content-right">
-                            <h1 class="sub-title text-success"> <u> SIKENAWA </u></h1>
-                            <h3 class="text-dark" >Sistem informasi Kesehatan Ternak Banyuwangi</h3>
+                            <h1 class="sub-title text-success" style="font-size: 50px"> <u> SIKENAWA </u></h1>
+                            <h4 class="text-dark pb-3" >Sistem informasi Kesehatan Ternak Banyuwangi</h4>
                             <p class="text-dark" style="text-align: justify">SIKENAWA merupakan platform dua arah yang menghubungkan antara divisi dinas peternakan Kabupaten Banyuwangi dengan peternak yang ada diseluruh Kabupaten Banyuwangi. Memuat informasi meengenai pengaduan dan peta penyebaran penyakit ternak yang ada di Kabupaten.</p>
                             <a class="main-btn" href="{{ route('signin')}}">Masuk</a>
                         </div> <!-- header content right -->
@@ -81,35 +81,24 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-25">
-                        <h2 class="title">Get In Touch</h2>
-                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                        <h2 class="title">Alamat Kami</h2>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-6 col-sm-7">
+                <div class="col-lg-12">    
+                <a href="https://goo.gl/maps/Q25FtprtpkAi9dbu9" target="_blank">
                     <div class="contact-box text-center mt-30" style="height: 80%;">
                         <div class="contact-icon">
                             <i class="lni-map-marker"></i>
                         </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Address</h6>
-                            <p>Jalan R. A. Kartini No. 56, Kepatihan, Kecamatan Banyuwangi, Kepatihan, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68411</p>
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30" style="height: 80%;">
-                        <div class="contact-icon">
-                            <i class="lni-phone"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Phone</h6>
-                            <p>+16 82141368195</p>
-                            <p>082141368195</p>
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
+                            <div class="contact-content">
+                                <h6 class="contact-title">Alamat</h6>
+                                <p>Jalan R. A. Kartini No. 56, Kepatihan, Kecamatan Banyuwangi, Kepatihan, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68411</p>
+                            </div>
+                        </div> <!-- contact box -->
+                    </div>
+                </a>
                 
             </div> <!-- row -->
         </div> <!-- container -->

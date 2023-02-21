@@ -1883,8 +1883,8 @@ ol.tick-mark:after {
 
 .call-center {
   position: fixed;
-  right: 40px;
-  top: 670px;
+  right: 100px;
+  top: 600px;
   overflow: hidden;
   width: 50px;
   height: 50px;
