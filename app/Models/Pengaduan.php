@@ -28,9 +28,6 @@ class Pengaduan extends Model
         'balasan',
         'jenisHewan',
         'foto',
-        
-
-
     ];
 
     // public static function boot()
@@ -41,9 +38,23 @@ class Pengaduan extends Model
     //     });
     // }
 
-    // public function Lokasi(){
-    //     return $this->hasMany(Lokasi::class);
-    // }
+    public function provinsis()
+    {
+        return $this->belongsTo(Province::class, 'provinsi');
+    }
 
-    
+    public function kabupatens()
+    {
+        return $this->belongsTo(Regency::class, 'kabupaten');
+    }
+
+    public function kecamatans()
+    {
+        return $this->belongsTo(District::class, 'kecamatan');
+    }
+
+    public function desas()
+    {
+        return $this->belongsTo(Village::class, 'desa');
+    }
 }

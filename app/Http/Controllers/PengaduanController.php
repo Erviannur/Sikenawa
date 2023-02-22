@@ -15,43 +15,21 @@ use Haruncpi\LaravelIdGenerator\IdGenerator;
 
 class PengaduanController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        
         return view('complaint.complaint', [
         'pengaduan' => $pengaduan]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        // Get semua data
         $provinces = Province::all();
-        $regencies = Regency::all();
-        $districts = District::all();
-        $villages = Village::all();
         $jenis_ternak = Jenis_ternak::all();
-        return view('complaint.complaint',compact('provinces','regencies','districts','villages','jenis_ternak'));
+        return view('complaint.complaint', compact('provinces', 'jenis_ternak'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-
         $request->validate([
             'name' => 'required',
             'nomer' => 'required',
@@ -62,18 +40,23 @@ class PengaduanController extends Controller
             'kecamatan' => 'required',
             'desa' =>   'required',
             'keterangan' => 'required',
-            'status' => 'required',
-            'balasan' => 'required',
             'jenisHewan' => 'required',
-            'foto' => 'image|file|max:1024',
-            
+
         ]);
+
         $array = $request->only([
-            'name', 'nomer', 'email','tanggal', 'provinsi', 'kabupaten'. 'kecamatan', 'desa','keterangan', 'status', 'balasan', 'jenisHewan', 'foto'
+            'name', 'nomer', 'email','tanggal', 'provinsi', 'kabupaten', 'kecamatan', 'desa','keterangan', 'jenisHewan'
         ]);
+        if ($image = $request->file('foto')) {
+            $destinationPath = 'foto/';
+            $profileImage = date('Ymd') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $profileImage);
+            $fotopath = $destinationPath."$profileImage";
+            $array = array_merge($array, ['foto' => $fotopath]);
+        }
+
         $pengaduan = Pengaduan::create($array);
-        return route('generate-code-report.user')
-            ->with('success_message', 'Berhasil mengirim Pengaduan');
+        return redirect('generate-code-report/'.$pengaduan->idPengaduan)->with('success_message', 'Berhasil mengirim Pengaduan');
     }
 
     public function popup(){
@@ -82,57 +65,58 @@ class PengaduanController extends Controller
         return view('status.user', compact('pengaduans'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Pengaduan  $pengaduan
-     * @return \Illuminate\Http\Response
-     */
     public function show(Pengaduan $pengaduan)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Pengaduan  $pengaduan
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Pengaduan $pengaduan)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Pengaduan  $pengaduan
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Pengaduan $pengaduan)
     {
-        //
+        foreach($request->id as $key => $value){
+
+            // Find record to update with Model as your table model
+    
+            $record = Pengaduan::find($value);
+    
+            $record->balasan = $request->balasan[$key];
+    
+            $record->save();
+        }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Pengaduan  $pengaduan
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Pengaduan $pengaduan)
     {
         //
     }
 
-    // public function getKabupaten(Request $request){
-    //     $id_provinsi = $request->id_provinsi;
-    //     $kabupatens = Regency::where('province_id',$id_provinsi)->get();
+    public function generateCode($id)
+    {
+        return view('complaint.generate-code', compact('id'));
+    }
 
-    //     foreach ($kabupatens as $kabupaten){
-    //         echo "<option value='$kabupaten->id'>$kabupaten->name</option>";
-    //     }
-    // }
+    public function getKabupaten(Request $request){
+        $id_provinsi = $request->id;
+        $kabupaten = Regency::where('province_id', $id_provinsi)->get();
+
+        return response()->json($kabupaten);
+    }
+
+    public function getKecamatan(Request $request){
+        $id_kabupaten = $request->id;
+        $kecamatan = District::where('regency_id', $id_kabupaten)->get();
+
+        return response()->json($kecamatan);
+    }
+
+    public function getDesa(Request $request){
+        $id_kecamatan = $request->id;
+        $desa = Village::where('district_id', $id_kecamatan)->get();
+
+        return response()->json($desa);
+    }
 }

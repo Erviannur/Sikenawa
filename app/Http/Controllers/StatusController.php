@@ -3,15 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\Status;
+use App\Models\Pengaduan;
 use Illuminate\Http\Request;
 
 class StatusController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function cekStatus(Request $request)
+    {
+        if(!str_contains($request->id_pengaduan, 'A-')) {
+            return redirect()->back();
+        };
+        $array = explode('-', $request->id_pengaduan);
+        $id_pengajuan = intval($array[1]);
+        $pengaduan = Pengaduan::find($id_pengajuan);
+        return view('status.status', compact('pengaduan'));
+    }
     public function index()
     {
         //

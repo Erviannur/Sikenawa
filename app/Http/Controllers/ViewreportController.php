@@ -49,7 +49,8 @@ class ViewreportController extends Controller
      */
     public function show($id)
     {
-        //
+        $pengaduan = Pengaduan::find($id);
+        return view('admin.report.view-report', compact('pengaduan'));
     }
 
     /**

@@ -17,14 +17,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call(IndoRegionSeeder::class);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
-
-         User::create([
+        User::create([
             'email' => 'admin@gmail.com',
             'password' => bcrypt('admin'),
         ]);
@@ -190,6 +185,6 @@ class DatabaseSeeder extends Seeder
         //     'latitude' => '',
         //     'longitude' => '',
         // ],
-    
+
     }
 }

@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/logo/logo.png') }}">
     <!--====== Title ======-->
@@ -54,14 +54,14 @@
 
     <!--====== PRELOADER ENDS START ======-->
 
-    
+
 
 
 
     @yield('content')
 
-     
-    
+
+
     <!-- Modal -->
     {{-- <div class="modal fade" id="modalMd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -79,10 +79,7 @@
       </div>
     </div>
   </div> --}}
-  
 
-      
-  
 
 <!--====== jquery js ======-->
 <script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
