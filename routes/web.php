@@ -45,12 +45,8 @@ Route::get('notifications', function () {
 
 
 Route::resource('report', ReportController::class);
-<<<<<<< HEAD
-Route::resource('viewreport', ViewreportController::class);
-=======
 Route::get('viewreport/{id}', [ViewreportController::class, 'show'])->name('viewreport.show');
 // Route::resource('viewreport', ViewreportController::class);
->>>>>>> e52da8100dba730e2ed0c76abbb76134da2bb4d7
 
 
 Route::get('accept-report', function () {

@@ -18,7 +18,7 @@
         </div> <!-- navigation -->
 
         <div id="parallax" class="header-content d-flex align-items-center">
-            <div class="header-shape shape-one layer" data-depth="0.10">
+            {{-- <div class="header-shape shape-one layer" data-depth="0.10">
                 <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
             </div> <!-- header shape -->
             <div class="header-shape shape-tow layer" data-depth="0.30">
@@ -47,7 +47,7 @@
             </div> <!-- header shape -->
             <div class="header-shape shape-ten layer" data-depth="0.30">
                 <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
-            </div> <!-- header shape -->
+            </div> <!-- header shape --> --}}
 
             
             <div class="container">
@@ -57,7 +57,6 @@
                             <h1 class="sub-title text-success" style="font-size: 50px"> <u> SIKENAWA </u></h1>
                             <h4 class="text-dark pb-3" >Sistem informasi Kesehatan Ternak Banyuwangi</h4>
                             <p class="text-dark" style="text-align: justify">SIKENAWA merupakan platform dua arah yang menghubungkan antara divisi dinas peternakan Kabupaten Banyuwangi dengan peternak yang ada diseluruh Kabupaten Banyuwangi. Memuat informasi meengenai pengaduan dan peta penyebaran penyakit ternak yang ada di Kabupaten.</p>
-                            <a class="main-btn" href="{{ route('signin')}}">Masuk</a>
                         </div> <!-- header content right -->
                     </div>
                     <div class="col-lg-6 offset-xl-1">

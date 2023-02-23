@@ -13,13 +13,8 @@
         <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="page-scroll" href="{{ route('home.user')}}">Home</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('pengaduan.create') }}">Pengaduan</a></li>
-<<<<<<< HEAD
-            <li class="nav-item"><a class="page-scroll" href="{{ route('generateId.user')}}">Status Pengaduan</a></li>
-            <li class="nav-item"><a class="page-scroll" href="{{ route('disease-map.user')}}">Peta Penyakit</a></li>
-=======
             <li class="nav-item"><a class="page-scroll" href="{{ route('generateId.user')}}">Status</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('outlet_map.index') }}">Peta Penyakit</a></li>
->>>>>>> e52da8100dba730e2ed0c76abbb76134da2bb4d7
         </ul>
         <div class="m-lauto">
             <a href="{{ route('login') }}">
